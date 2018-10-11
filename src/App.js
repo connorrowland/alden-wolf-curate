@@ -15,12 +15,8 @@ import Footer from './Components/Footer';
 import ContactPreFooter from './Components/ContactPreFooter';
 
 // Views
-import ServiceProvidersPage from './Views/ServiceProviders';
 import LandingPage from './Views/Landing';
 import NoMatch from './Views/NoMatch';
-
-// Images
-import Logo from './Images/Story_Logo.png';
 
 new Clipboard('.copy--link');
 
@@ -40,9 +36,7 @@ class App extends Component {
       <Router>
         <div className="page container-fluid">
           <Helmet titleTemplate={`%s - ${title}`} />
-          <NavBar
-            logo={Logo}
-          />
+          <NavBar/>
           <Switch>
             {routes.map((route, i) => (
               <Route key={i} {...route} />

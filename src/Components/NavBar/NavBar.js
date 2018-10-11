@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 import XIcon from './x_icon.png';
-import Logo from '/Images/Logo_Black.png';
+import Logo from './Logo_Black.png';
 
 class NavBar extends Component {
   constructor(props) {
@@ -50,20 +50,23 @@ class NavBar extends Component {
 
         <nav className="nav-links--container">
           <div className="nav--inner">
-            <Link to="/" className="nav--logo">
-              <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
-            </Link>
-            <div className="nav-inner--right">
-              <div className="nav-inner-right--links">
-                <Link to="/Platform" className="nav--link">Platform</Link>
-                <Link to="/Publishers" className="nav--link">Publishers</Link>
-                <Link to="/Company" className="nav--link">Company & Events</Link>
-              </div>
+            <div className="nav-inner--left">
               <a href="/" className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>
                 <span className="navigation--burger-menu-line"></span>
                 <span className="navigation--burger-menu-line"></span>
                 <span className="navigation--burger-menu-line"></span>
               </a>
+              <Link to="/" className="nav--logo">
+                <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
+              </Link>
+              <div className="nav-inner-left--links">
+                <Link to="/Platform" className="nav--link">Platform</Link>
+                <Link to="/Publishers" className="nav--link">Publishers</Link>
+                <Link to="/Company" className="nav--link">Company & Events</Link>
+              </div>
+            </div>
+            <div className="nav-inner--right">
+              <a className="button" href="">Get Started</a>
             </div>
           </div>
         </nav>

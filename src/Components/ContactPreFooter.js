@@ -8,13 +8,13 @@ class ContactPreFooter extends Component {
           <div className="pre-footer--demographic-module">
             <h5>Advertisers</h5>
             <p>Grow your audience confidently with premium placements and transparent metrics.</p>
-            <a className="button--navy" href="">Let’s work together</a>
+            <a className="button button--navy" href="">Let’s work together</a>
           </div>
           <div className="pre-footer--demographic-divider"></div>
           <div className="pre-footer--demographic-module">
             <h5>Publishers</h5>
             <p>Monetize effortlessly with premium brands, clear analytics and best in class optimization.</p>
-            <a className="button--navy" href="">Let’s work together</a>
+            <a className="button button--navy" href="">Let’s work together</a>
           </div>
         </div>
       </section>
