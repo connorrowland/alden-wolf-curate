@@ -1,6 +1,7 @@
 // Dependencies
 import React from 'react';
 import Helmet from 'react-helmet';
+import SlickCarousel from 'slick-carousel';
 
 // Style
 import '../Landing.css';
@@ -13,6 +14,19 @@ import TargetingIcon from '../Images/Targeting_Icon.png';
 import OptimizationIcon from '../Images/Optimization_Icon.png';
 import DataIcon from '../Images/Data_Icon.png';
 import ProductMockup from '../Images/Landing_Product_Mockup.png';
+import MonitoringIcon from '../Images/Monitoring_Icon.png';
+import SecurityIcon from '../Images/Security_Icon.png';
+
+import AdOne from "../Images/landing_verticals/ecommerce.png";
+import AdTwo from "../Images/landing_verticals/lifestyle.png";
+import AdThree from "../Images/landing_verticals/entertainment.png";
+import AdFour from "../Images/landing_verticals/game.png";
+import AdFive from "../Images/landing_verticals/fitness.png";
+import AdSix from "../Images/landing_verticals/social.png";
+import AdSeven from "../Images/landing_verticals/finance.png";
+import AdEight from "../Images/landing_verticals/food.png";
+import AdNine from "../Images/landing_verticals/utilities.png";
+import AdTen from "../Images/landing_verticals/quick.png";
 
 export default () => (
   <div id="landing-page">
@@ -96,20 +110,98 @@ export default () => (
             <p>Our Managed Growth Platform keeps up with the dynamic marketplace so you can seize opportunities in real time.</p>
             <div id="landing-optimization--links" className="flex--grid">
               <div className="landing-optimization--link-column">
-                <a href="" class="landing-optimization--link">Premium placement</a>
-                <a href="" class="landing-optimization--link">Focused geo-targeting</a>
-                <a href="" class="landing-optimization--link">Data augmentation</a>
+                <a href="" className="landing-optimization--link">Premium placement</a>
+                <a href="" className="landing-optimization--link">Focused geo-targeting</a>
+                <a href="" className="landing-optimization--link">Data augmentation</a>
               </div>
               <div className="landing-optimization--link-column">
-                <a href="" class="landing-optimization--link">Robust integrations</a>
-                <a href="" class="landing-optimization--link">Billions of transactions</a>
-                <a href="" class="landing-optimization--link">Personalized support</a>
+                <a href="" className="landing-optimization--link">Robust integrations</a>
+                <a href="" className="landing-optimization--link">Billions of transactions</a>
+                <a href="" className="landing-optimization--link">Personalized support</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <img src={ProductMockup} alt="Curate Product Mockup" id="landing-optimization-inner--mockup"/>
+    </section>
+
+    <section id="landing--features" className="section--normal">
+      <div className="container">
+        <div id="landing-features--inner" className="flex--grid">
+          <div className="landing-features--item flex-duo--item">
+            <img src={MonitoringIcon} alt="Monitoring Icon" className="landing-feature-item--icon"/>
+            <h2>Proactive monitoring</h2>
+            <p>With the ability to track over 1,000 queries per second (QPS) without the loss of any clicks, we optimize under-performing placements in real-time.</p>
+          </div>
+          <div className="landing-features--item flex-duo--item">
+            <img src={SecurityIcon} alt="Security Icon" className="landing-feature-item--icon"/>
+            <h2>Cutting-edge security</h2>
+            <p>Our platform programmatically blocks suspicious, non-human activity from emulators, install-bot farms, device-spoofing, and proxy unmasking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="landing--leadership" className="section--normal">
+      <div className="container">
+        <div id="landing-leadership--inner">
+          <h2>Award-winning leadership</h2>
+          <p>We’ve been recognized throughout the industry for our commitment to ethical practices and forward-thinking approach.</p>
+        </div>
+      </div>
+      <div id="landing--award-carousel">
+        <div className="landing-award--carousel-item">
+          <h3>2018 E&Y Entrepreneur of the Year</h3>
+        </div>
+        <div className="landing-award--carousel-item">
+          <h3>2018 Canadian Business ‘Top New Growth Company’</h3>
+        </div>
+        <div className="landing-award--carousel-item">
+          <h3>Coalition Against Ad Fraud Member</h3>
+        </div>
+        <div className="landing-award--carousel-item">
+          <h3>Coalition Against Ad Fraud Member</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="landing--success" className="section--normal">
+      <div className="container">
+        <div id="landing-success--inner">
+          <div id="landing-success--heading">
+            <h2>Proven success in a variety of categories</h2>
+          </div>
+          <div id="landing-success--categories" className="flex--grid">
+            <div className="landing-success-category--text-col" id="success-text-col--1">
+              <a href="" className="landing-success--category-item success-category--active" id="success-category-item--1">eCommerce</a>
+              <a href="" className="landing-success--category-item" id="success-category-item--2">Lifestyle</a>
+              <a href="" className="landing-success--category-item" id="success-category-item--3">Entertainment</a>
+              <a href="" className="landing-success--category-item" id="success-category-item--4">Games</a>
+              <a href="" className="landing-success--category-item" id="success-category-item--5">Health & Fitness</a>
+            </div>
+            <div id="landing-success-category--img-col">
+              <img src={AdOne} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdTwo} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdThree} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdFour} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdFive} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdSix} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdSeven} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdEight} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdNine} alt="Curate Ad" className="landing--category-ad-img"/>
+              <img src={AdTen} alt="Curate Ad" className="landing--category-ad-img"/>
+            </div>
+            <div className="landing-success-category--text-col" id="success-text-col--2">
+              <a href="" className="landing-success--category-item" id="success-category-item--6">Social Media</a>
+              <a href="" className="landing-success--category-item" id="success-category-item--7">Finance</a>
+              <a href="" className="landing-success--category-item" id="success-category-item--8">Food & Drink</a>
+              <a href="" className="landing-success--category-item" id="success-category-item--9">Utilities</a>
+              <a href="" className="landing-success--category-item" id="success-category-item--10">Quick Service Restaurants</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <Helmet title=''/>

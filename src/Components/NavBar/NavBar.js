@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 import XIcon from './x_icon.png';
-import Logo from './Logo_Black.png';
+import Logo from './Logo.png';
 
 class NavBar extends Component {
   constructor(props) {

@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet';
 import * as $ from 'jquery';
-import Clipboard from 'clipboard';
 
 // CSS
 import 'normalize.css';
@@ -12,13 +11,12 @@ import './Shared.css';
 // Components
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer';
-import ContactPreFooter from './Components/ContactPreFooter';
+import PreFooter from './Components/PreFooter';
+import Carousel from './Carousel';
 
 // Views
 import LandingPage from './Views/Landing';
 import NoMatch from './Views/NoMatch';
-
-new Clipboard('.copy--link');
 
 const title = 'Story Ventures';
 const routes = [
@@ -43,7 +41,7 @@ class App extends Component {
             ))}
             <Route component={NoMatch} />
           </Switch>
-          <ContactPreFooter />
+          <PreFooter />
           <Footer />
         </div>
       </Router>
