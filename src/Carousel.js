@@ -18,7 +18,33 @@ $(document).ready(function() {
     autoplay: false,
     dots: false,
     prevArrow: leftArrowHTML,
-    nextArrow: rightArrowHTML
+    nextArrow: rightArrowHTML,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: false,
+          dots: false,
+          prevArrow: leftArrowHTML,
+          nextArrow: rightArrowHTML
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: false,
+          dots: false,
+          prevArrow: leftArrowHTML,
+          nextArrow: rightArrowHTML
+        }
+      }
+    ]
   });
 
   $("#landing-success-category--img-col").slick({
@@ -36,7 +62,8 @@ $(document).ready(function() {
 
   $('#landing-success-category--img-col').on('afterChange', function(slick, currentSlide){
     let activeCategory = "#success-category-item--" + (parseInt(currentSlide.currentSlide) + 1);
+    let mobileActiveCategory = ", #success-mobile-category-item--" + (parseInt(currentSlide.currentSlide) + 1);
     $(".landing-success--category-item").removeClass("success-category--active");
-    $(activeCategory).addClass("success-category--active");
+    $(activeCategory + mobileActiveCategory).addClass("success-category--active");
   });
 });

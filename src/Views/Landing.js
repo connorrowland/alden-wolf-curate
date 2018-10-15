@@ -32,7 +32,7 @@ export default () => (
   <div id="landing-page">
     <section id="landing--header">
       <div className="container">
-        <div id="landing-header--inner" className="flex--grid">
+        <div id="landing-header--inner" className="flex--grid section--header">
           <div id="landing-header-inner--text">
             <h1>Mobile growth you can trust.</h1>
             <p>We empower brands and agencies with transparent, sustainable, performance-driven customer acquisition solutions.</p>
@@ -123,7 +123,9 @@ export default () => (
           </div>
         </div>
       </div>
-      <img src={ProductMockup} alt="Curate Product Mockup" id="landing-optimization-inner--mockup"/>
+      <div id="optimization-mockup--container">
+        <img src={ProductMockup} alt="Curate Product Mockup" id="landing-optimization-inner--mockup"/>
+      </div>
     </section>
 
     <section id="landing--features" className="section--normal">
@@ -198,6 +200,28 @@ export default () => (
               <a href="" className="landing-success--category-item" id="success-category-item--8">Food & Drink</a>
               <a href="" className="landing-success--category-item" id="success-category-item--9">Utilities</a>
               <a href="" className="landing-success--category-item" id="success-category-item--10">Quick Service Restaurants</a>
+            </div>
+
+            <div id="landing-success-category--mobile-col">
+              <a href="" className="landing-success--category-item success-category--active" id="success-category-item--1">eCommerce</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--2">Lifestyle</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--3">Entertainment</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--4">Games</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--5">Health & Fitness</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--6">Social Media</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--7">Finance</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--8">Food & Drink</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--9">Utilities</a>
+              <p className="success-category--bullet">&bull;</p>
+              <a href="" className="landing-success--category-item" id="success-mobile-category-item--10">Quick Service Restaurants</a>
             </div>
           </div>
         </div>

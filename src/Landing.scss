@@ -8,19 +8,51 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   #landing-header--inner {
-    margin-top: 80px;
     #landing-header-inner--text {
       max-width: 600px;
-      margin-top: 80px;
+      margin: 80px 0 0 0;
+      @media(max-width: $DeskLG) {
+        max-width: 500px;
+        margin: 50px 0 0 0;
+      }
+      @media(max-width: $TabletLG) {
+        margin: 50px 0 0 0;
+        max-width: 350px;
+      }
+      @media(max-width: $Tablet) {
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 0 0 40px 0;
+      }
       h1,p {
         margin-bottom: 20px;
+        @media(max-width: $Tablet) {
+          margin-bottom: 15px;
+        }
+      }
+      h1 {
+        @media(max-width: $Tablet) {
+          max-width: 275px;
+        }
       }
     }
     #landing-header-inner--ad {
       width: 330px;
       height: auto;
       max-height: 660px;
-      margin-right: 50px;
+      margin: 0 50px 0 0;
+      @media(max-width: $DeskLG) {
+        width: 250px;
+      }
+      @media(max-width: $TabletLG) {
+        width: 200px;
+        max-height: 405px;
+      }
+      @media(max-width: $Tablet) {
+        margin: 0 auto;
+        width: 150px;
+        max-height: 305px;
+      }
     }
   }
 }
@@ -69,6 +101,9 @@
   background-position: center;
   position: relative;
   padding-bottom: 300px;
+  @media(max-width: $TabletLG) {
+    padding-bottom: 225px;
+  }
   #landing-global-scaling--text {
     text-align: center;
     max-width: 695px;
@@ -83,10 +118,17 @@
     position: absolute;
     bottom: -187.5px;
     left: 0;
+    @media(max-width: $TabletLG) {
+      bottom: -150px;
+    }
     img {
       width: 750px;
       height: auto;
       max-height: 375px;
+      @media(max-width: $TabletLG) {
+        width: 600px;
+        max-height: 300px;
+      }
     }
   }
 }
@@ -94,10 +136,20 @@
 #landing--optimization {
   padding-top: 300px;
   position: relative;
+  @media(max-width: $DeskLG) {
+    padding-top: 225px;
+    padding-bottom: 0;
+  }
   #landing-optimization--inner {
     #landing-optimization-inner--text {
       max-width: 600px;
       padding-top: 90px;
+      @media(max-width: $DeskLG) {
+        max-width: 500px;
+      }
+      @media(max-width: $TabletLG) {
+        padding-top: 0;
+      }
       h2 {
         color: $Red;
       }
@@ -112,6 +164,9 @@
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
+          @media(max-width: $TabletLG) {
+            width: 100%;
+          }
           .landing-optimization--link {
             width: 100%;
             color: $Red;
@@ -128,6 +183,20 @@
     position: absolute;
     top: 300px;
     right: 0;
+    @media(max-width: $DeskLG) {
+      width: 400px;
+    }
+    @media(max-width: $TabletLG) {
+      position: relative;
+      bottom: 0;
+      top: unset;
+    }
+  }
+  #optimization-mockup--container {
+    @media(max-width: $TabletLG) {
+      text-align: right;
+      margin-top: 40px;
+    }
   }
 }
 
@@ -135,13 +204,24 @@
   #landing-features--inner {
     .landing-features--item {
       max-width: 450px;
+      @media(max-width: $Desk) {
+        max-width: 385px;
+      }
+      @media(max-width: $TabletLG) {
+        width: 45%;
+      }
       h2 {
         max-width: 320px;
+        margin-bottom: 10px;
       }
       .landing-feature-item--icon {
         width: 120px;
         height: auto;
         max-height: 160px;
+        @media(max-width: $TabletLG) {
+          width: 100px;
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -155,10 +235,17 @@
     margin: 0 auto;
     h2,p {
       color: $White;
+      @media(max-width: $Phone) {
+        max-width: 300px;
+        margin: 0 auto;
+      }
     }
   }
   #landing--award-carousel {
     margin-top: 70px;
+    @media(max-width: $Tablet) {
+      margin-top: 40px;
+    }
     .landing-award--carousel-item {
       background-image: url("./Images/Award_Background.png");
       background-position: center;
@@ -166,6 +253,15 @@
       background-size: contain;
       height: 170px;
       position: relative;
+      @media(max-width: $DeskLG) {
+        height: 140px;
+      }
+      @media(max-width: $TabletLG) {
+        height: 130px;
+      }
+      @media(max-width: $Tablet) {
+        height: 100px;
+      }
       h3 {
         color: $White;
         font-size: 20px;
@@ -176,7 +272,16 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-60%);
+        @media(max-width: $Desk) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        @media(max-width: $Tablet) {
+          font-size: 14px;
+          line-height: 18px;
+          max-width: 130px;
+        }
       }
     }
   }
@@ -190,17 +295,56 @@
       margin-bottom: 60px;
       h2 {
         font-family: 'GraphicSemibold';
+        @media(max-width: $DeskLG) {
+          max-width: 550px;
+          margin: 0 auto;
+        }
+        @media(max-width: $TabletLG) {
+          max-width: 300px;
+        }
       }
     }
     .landing-success-category--text-col {
       width: 315px;
       padding-top: 70px;
-      .landing-success--category-item {
-        color: $Gray;
-        line-height: 90px;
-        width: 100%;
+      @media(max-width: $DeskLG) {
+        width: 230px;
+      }
+      @media(max-width: $TabletLG) {
+        width: 180px;
+        padding-top: 50px;
+      }
+      @media(max-width: $Tablet) {
+        display: none;
+      }
+    }
+    .landing-success--category-item {
+      color: $Gray;
+      line-height: 90px;
+      width: 100%;
+      display: block;
+      font-size: 22px;
+      @media(max-width: $DeskLG) {
+        font-size: 14px;
+        line-height: 60px;
+      }
+      @media(max-width: $Tablet) {
+        display: inline;
+        line-height: 30px;
+      }
+    }
+    .success-category--bullet {
+      color: $Gray;
+      display: inline;
+      margin: 0 7.5px;
+    }
+    #landing-success-category--mobile-col {
+      display: none;
+      @media(max-width: $Tablet) {
         display: block;
-        font-size: 22px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
       }
     }
     #success-text-col--1 {
@@ -211,6 +355,12 @@
     }
     #landing-success-category--img-col {
       width: 305px;
+      @media(max-width: $DeskLG) {
+        width: 225px;
+      }
+      @media(max-width: $Tablet) {
+        margin: 0 auto;
+      }
       .landing--category-ad-img {
         width: 100%;
         height: auto;
