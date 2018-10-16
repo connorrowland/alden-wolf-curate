@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import XIcon from './x_icon.png';
 import Logo from './Logo.png';
 
@@ -35,34 +34,39 @@ class NavBar extends Component {
         <div className={`mobile-flyout--container ${this.state.mobileFlyoutOpen ? "mobile-flyout--open" : "mobile-flyout--closed"}`}>
           <div className="mobile-flyout--inner">
             <div className="mobile-flyout--menu">
-              <Link to="/" className="nav--link" onClick={this.toggleMobileNavigation}>
-                <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
-              </Link>
-              <a href="#" className="nav--x-container" id="nav-close" onClick={this.toggleMobileNavigation}>
-                <img src={XIcon} className="mobile-nav-x--img" alt="Curate Mobile Logo" />
-              </a>
+              <div className="mobile-flyout--menu-inner">
+                <NavLink to="/" onClick={this.toggleMobileNavigation} >
+                  <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
+                </NavLink>
+                <a href="#" className="nav--x-container" id="nav-close" onClick={this.toggleMobileNavigation}>
+                  <img src={XIcon} className="mobile-nav-x--img" alt="Curate Mobile Logo" />
+                </a>
+              </div>
+              <div id="mobile-flyout--divider"></div>
             </div>
-            <Link to="/Platform" className="nav--link">Platform</Link>
-            <Link to="/Publishers" className="nav--link">Publishers</Link>
-            <Link to="/Company" className="nav--link">Company & Events</Link>
+            <div className="mobile-flyout--links-container">
+              <NavLink to="/Platform" className="nav--link" activeClassName="nav--link-selected">Platform</NavLink>
+              <NavLink to="/Publishers" className="nav--link" activeClassName="nav--link-selected">Publishers</NavLink>
+              <NavLink to="/Company" className="nav--link" activeClassName="nav--link-selected">Company & Events</NavLink>
+            </div>
           </div>
         </div>
 
         <nav className="nav-links--container">
           <div className="nav--inner">
             <div className="nav-inner--left">
-              <a href="/" className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>
+              <a href="#" className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>
                 <span className="navigation--burger-menu-line"></span>
                 <span className="navigation--burger-menu-line"></span>
                 <span className="navigation--burger-menu-line"></span>
               </a>
-              <Link to="/" className="nav--logo">
+              <NavLink to="/" className="nav--logo">
                 <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
-              </Link>
+              </NavLink>
               <div className="nav-inner-left--links">
-                <Link to="/Platform" className="nav--link">Platform</Link>
-                <Link to="/Publishers" className="nav--link">Publishers</Link>
-                <Link to="/Company" className="nav--link">Company & Events</Link>
+                <NavLink to="/Platform" className="nav--link" activeClassName="nav--link-selected">Platform</NavLink>
+                <NavLink to="/Publishers" className="nav--link" activeClassName="nav--link-selected">Publishers</NavLink>
+                <NavLink to="/Company" className="nav--link" activeClassName="nav--link-selected">Company & Events</NavLink>
               </div>
             </div>
             <div className="nav-inner--right">

@@ -2,6 +2,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import SlickCarousel from 'slick-carousel';
+import Carousel from '../Carousel';
 
 // Style
 import '../Landing.css';
@@ -176,11 +177,11 @@ export default () => (
           </div>
           <div id="landing-success--categories" className="flex--grid">
             <div className="landing-success-category--text-col" id="success-text-col--1">
-              <a href="" className="landing-success--category-item success-category--active" id="success-category-item--1">eCommerce</a>
-              <a href="" className="landing-success--category-item" id="success-category-item--2">Lifestyle</a>
-              <a href="" className="landing-success--category-item" id="success-category-item--3">Entertainment</a>
-              <a href="" className="landing-success--category-item" id="success-category-item--4">Games</a>
-              <a href="" className="landing-success--category-item" id="success-category-item--5">Health & Fitness</a>
+              <p className="landing-success--category-item success-category--active" id="success-category-item--1">eCommerce</p>
+              <p className="landing-success--category-item" id="success-category-item--2">Lifestyle</p>
+              <p className="landing-success--category-item" id="success-category-item--3">Entertainment</p>
+              <p className="landing-success--category-item" id="success-category-item--4">Games</p>
+              <p className="landing-success--category-item" id="success-category-item--5">Health & Fitness</p>
             </div>
             <div id="landing-success-category--img-col">
               <img src={AdOne} alt="Curate Ad" className="landing--category-ad-img"/>
@@ -195,33 +196,33 @@ export default () => (
               <img src={AdTen} alt="Curate Ad" className="landing--category-ad-img"/>
             </div>
             <div className="landing-success-category--text-col" id="success-text-col--2">
-              <a href="" className="landing-success--category-item" id="success-category-item--6">Social Media</a>
-              <a href="" className="landing-success--category-item" id="success-category-item--7">Finance</a>
-              <a href="" className="landing-success--category-item" id="success-category-item--8">Food & Drink</a>
-              <a href="" className="landing-success--category-item" id="success-category-item--9">Utilities</a>
-              <a href="" className="landing-success--category-item" id="success-category-item--10">Quick Service Restaurants</a>
+              <p className="landing-success--category-item" id="success-category-item--6">Social Media</p>
+              <p className="landing-success--category-item" id="success-category-item--7">Finance</p>
+              <p className="landing-success--category-item" id="success-category-item--8">Food & Drink</p>
+              <p className="landing-success--category-item" id="success-category-item--9">Utilities</p>
+              <p className="landing-success--category-item" id="success-category-item--10">Quick Service Restaurants</p>
             </div>
 
             <div id="landing-success-category--mobile-col">
-              <a href="" className="landing-success--category-item success-category--active" id="success-category-item--1">eCommerce</a>
+              <p className="landing-success--category-item success-category--active" id="success-category-item--1">eCommerce</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--2">Lifestyle</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--2">Lifestyle</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--3">Entertainment</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--3">Entertainment</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--4">Games</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--4">Games</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--5">Health & Fitness</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--5">Health & Fitness</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--6">Social Media</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--6">Social Media</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--7">Finance</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--7">Finance</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--8">Food & Drink</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--8">Food & Drink</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--9">Utilities</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--9">Utilities</p>
               <p className="success-category--bullet">&bull;</p>
-              <a href="" className="landing-success--category-item" id="success-mobile-category-item--10">Quick Service Restaurants</a>
+              <p className="landing-success--category-item" id="success-mobile-category-item--10">Quick Service Restaurants</p>
             </div>
           </div>
         </div>

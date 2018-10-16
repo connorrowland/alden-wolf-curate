@@ -1,0 +1,228 @@
+#Platform {
+  background: url("./Images/Platform_BG.png");
+  background-repeat: no-repeat; }
+
+#platform--header {
+  padding-bottom: 180px; }
+  @media (max-width: 992px) {
+    #platform--header {
+      padding-bottom: 140px; } }
+  @media (max-width: 768px) {
+    #platform--header {
+      padding-bottom: 100px; } }
+  #platform--header #platform-header--inner #platform-header-inner--text {
+    max-width: 685px;
+    margin: 0 auto;
+    text-align: center; }
+    #platform--header #platform-header--inner #platform-header-inner--text h2 {
+      color: #850201;
+      margin-bottom: 15px; }
+      @media (max-width: 768px) {
+        #platform--header #platform-header--inner #platform-header-inner--text h2 {
+          font-size: 36px;
+          line-height: 48px;
+          margin: 0 auto 10px auto;
+          max-width: 260px; } }
+    #platform--header #platform-header--inner #platform-header-inner--text p {
+      font-size: 20px;
+      line-height: 37px; }
+      @media (max-width: 768px) {
+        #platform--header #platform-header--inner #platform-header-inner--text p {
+          font-size: 14px;
+          line-height: 32px;
+          margin: 0 auto;
+          max-width: 400px; } }
+      @media (max-width: 550px) {
+        #platform--header #platform-header--inner #platform-header-inner--text p {
+          max-width: 260px; } }
+
+#platform--image {
+  background-color: #040B4E;
+  position: relative;
+  height: 550px; }
+  @media (max-width: 992px) {
+    #platform--image {
+      height: 350px; } }
+  @media (max-width: 768px) {
+    #platform--image {
+      height: 320px; } }
+  @media (max-width: 550px) {
+    #platform--image {
+      height: 150px; } }
+  #platform--image #platform--product-image-desk {
+    position: absolute;
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media (max-width: 992px) {
+      #platform--image #platform--product-image-desk {
+        width: 650px;
+        top: -70px; } }
+    @media (max-width: 768px) {
+      #platform--image #platform--product-image-desk {
+        display: none; } }
+  #platform--image #platform--product-image-mobile {
+    display: none; }
+    @media (max-width: 768px) {
+      #platform--image #platform--product-image-mobile {
+        display: block;
+        max-width: 500px;
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%); } }
+    @media (max-width: 550px) {
+      #platform--image #platform--product-image-mobile {
+        max-width: 300px; } }
+
+@media (max-width: 768px) {
+  #platform--performance #platform-performance--inner {
+    padding-top: 150px; } }
+
+@media (max-width: 550px) {
+  #platform--performance #platform-performance--inner {
+    padding-top: 120px; } }
+
+#platform--performance #platform-performance-inner--text {
+  text-align: center; }
+  @media (max-width: 992px) {
+    #platform--performance #platform-performance-inner--text h2 {
+      max-width: 500px;
+      margin: 0 auto 10px auto; } }
+  @media (max-width: 768px) {
+    #platform--performance #platform-performance-inner--text h2 {
+      max-width: 300px; } }
+
+#platform--performance #platform-performance--trio {
+  margin-top: 70px; }
+  @media (max-width: 992px) {
+    #platform--performance #platform-performance--trio {
+      margin-top: 30px; } }
+  #platform--performance #platform-performance--trio .platform-performance--trio-item {
+    text-align: center; }
+    @media (max-width: 992px) {
+      #platform--performance #platform-performance--trio .platform-performance--trio-item {
+        width: 32%; } }
+    @media (max-width: 768px) {
+      #platform--performance #platform-performance--trio .platform-performance--trio-item {
+        width: 100%;
+        margin-bottom: 40px; } }
+    #platform--performance #platform-performance--trio .platform-performance--trio-item .performance-trio--image-container {
+      height: 180px;
+      display: flex;
+      align-items: center; }
+      @media (max-width: 768px) {
+        #platform--performance #platform-performance--trio .platform-performance--trio-item .performance-trio--image-container {
+          height: 75px;
+          align-items: flex-start;
+          margin-bottom: 20px; } }
+      #platform--performance #platform-performance--trio .platform-performance--trio-item .performance-trio--image-container .performance-trio--image {
+        width: 95px;
+        height: auto;
+        margin: 0 auto; }
+        @media (max-width: 768px) {
+          #platform--performance #platform-performance--trio .platform-performance--trio-item .performance-trio--image-container .performance-trio--image {
+            height: 75px;
+            width: auto; } }
+    #platform--performance #platform-performance--trio .platform-performance--trio-item h3 {
+      margin: 0 0 10px 0; }
+      @media (max-width: 992px) {
+        #platform--performance #platform-performance--trio .platform-performance--trio-item h3 {
+          margin: 0;
+          font-size: 18px; } }
+    #platform--performance #platform-performance--trio .platform-performance--trio-item p {
+      font-size: 14px;
+      line-height: 29px;
+      max-width: 250px;
+      margin: 0 auto; }
+      @media (max-width: 768px) {
+        #platform--performance #platform-performance--trio .platform-performance--trio-item p {
+          max-width: 350px; } }
+
+#platform--curate-alert {
+  background-color: #850201;
+  position: relative; }
+  @media (max-width: 768px) {
+    #platform--curate-alert {
+      padding: 0 15px; } }
+  @media (max-width: 550px) {
+    #platform--curate-alert #platform-curate-alert--inner {
+      padding: 50px 0; } }
+  #platform--curate-alert #platform--bg-img-container {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    z-index: 1; }
+    @media (max-width: 1100px) {
+      #platform--curate-alert #platform--bg-img-container {
+        left: 100px; } }
+    @media (max-width: 992px) {
+      #platform--curate-alert #platform--bg-img-container {
+        right: -50px;
+        top: 50px;
+        left: unset; } }
+    #platform--curate-alert #platform--bg-img-container img {
+      width: 395px;
+      height: auto; }
+      @media (max-width: 1100px) {
+        #platform--curate-alert #platform--bg-img-container img {
+          width: 350px; } }
+      @media (max-width: 992px) {
+        #platform--curate-alert #platform--bg-img-container img {
+          width: 300px; } }
+  #platform--curate-alert #curate-alert--text {
+    z-index: 9;
+    position: relative;
+    max-width: 700px;
+    margin-left: auto; }
+    #platform--curate-alert #curate-alert--text h2 {
+      color: #FFFFFF; }
+      #platform--curate-alert #curate-alert--text h2:after {
+        content: 'TM';
+        position: relative;
+        font-size: 20px;
+        top: -20px;
+        left: 5px; }
+        @media (max-width: 768px) {
+          #platform--curate-alert #curate-alert--text h2:after {
+            top: -15px; } }
+      @media (max-width: 992px) {
+        #platform--curate-alert #curate-alert--text h2 {
+          max-width: 600px; } }
+      @media (max-width: 768px) {
+        #platform--curate-alert #curate-alert--text h2 {
+          max-width: 400px; } }
+      @media (max-width: 550px) {
+        #platform--curate-alert #curate-alert--text h2 {
+          max-width: 260px; } }
+    #platform--curate-alert #curate-alert--text h3 {
+      color: #FFFFFF;
+      margin-bottom: 30px; }
+      @media (max-width: 768px) {
+        #platform--curate-alert #curate-alert--text h3 {
+          line-height: 36px;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          font-size: 16px; } }
+  #platform--curate-alert .curate-alert--attribute-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px; }
+    #platform--curate-alert .curate-alert--attribute-container .curate-alert-check--image {
+      width: 20px;
+      height: auto;
+      margin-right: 20px; }
+    #platform--curate-alert .curate-alert--attribute-container p {
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 32px; }
+      @media (max-width: 550px) {
+        #platform--curate-alert .curate-alert--attribute-container p {
+          font-size: 12px;
+          line-height: 28px; } }

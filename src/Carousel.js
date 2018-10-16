@@ -57,7 +57,10 @@ $(document).ready(function() {
     fade: true,
     cssEase: 'linear',
     arrows: false,
-    autoplaySpeed: 2500
+    autoplaySpeed: 2500,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false
   });
 
   $('#landing-success-category--img-col').on('afterChange', function(slick, currentSlide){
