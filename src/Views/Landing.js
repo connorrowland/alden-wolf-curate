@@ -1,8 +1,6 @@
 // Dependencies
 import React from 'react';
 import Helmet from 'react-helmet';
-import SlickCarousel from 'slick-carousel';
-import Carousel from '../Carousel';
 
 // Style
 import '../Landing.css';

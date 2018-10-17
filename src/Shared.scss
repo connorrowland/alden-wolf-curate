@@ -600,7 +600,7 @@ button,.button {
 .contact-pre-footer {
   background-color: $BlueOne;
   padding: 65px 0;
-  @media(max-width: $TabletLG) {
+  @media(max-width: $Tablet) {
     padding: 15px 0 65px 0;
   }
   .contact-pre-footer--inner {
@@ -620,7 +620,7 @@ button,.button {
     @media(max-width: $Desk) {
       margin: 0 90px;
     }
-    @media(max-width: $TabletLG) {
+    @media(max-width: $Tablet) {
       display: none;
     }
   }
@@ -689,5 +689,96 @@ button,.button {
   @media(max-width: $Tablet) {
     border-bottom: 0;
     padding-bottom: 0;
+  }
+}
+
+.centered-text--header {
+  padding-bottom: 60px;
+  .centered-text-header--inner {
+    .centered-text-header-inner--text {
+      max-width: 685px;
+      margin: 0 auto;
+      text-align: center;
+      h2 {
+        color: $Red;
+        margin-bottom: 15px;
+        @media(max-width: $Tablet) {
+          font-size: 36px;
+          line-height: 48px;
+          margin: 0 auto 10px auto;
+          max-width: 260px;
+        }
+      }
+      p {
+        font-size: 20px;
+        line-height: 37px;
+        max-width: 550px;
+        margin: 0 auto;
+        @media(max-width: $Tablet) {
+          font-size: 14px;
+          line-height: 32px;
+          margin: 0 auto;
+          max-width: 400px;
+        }
+        @media(max-width: $Phone) {
+          max-width: 260px;
+        }
+      }
+    }
+  }
+}
+
+.rule--gray {
+  width: calc(100% - 265px);
+  height: 1px;
+  background: #979797;
+  max-width: 900px;
+  margin: 110px auto;
+  @media(max-width: $Tablet) {
+    width: calc(100% - 60px);
+    margin: 70px auto;
+  }
+  @media(max-width: $Phone) {
+    margin: 40px auto;
+  }
+}
+
+.trio-image-text--item {
+  text-align: center;
+  .trio-image--container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 115px;
+    justify-content: center;
+    margin: 0 auto;
+    @media(max-width: $TabletLG) {
+      width: 45px;
+      height: 50px;
+    }
+    img {
+      width: auto;
+      height: 90px;
+      @media(max-width: $TabletLG) {
+        height: 40px;
+      }
+    }
+  }
+  h3 {
+    line-height: 39px;
+    margin-top: 10px;
+    @media(max-width: $TabletLG) {
+      font-size: 22px;
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 29px;
+    max-width: 300px;
+    margin: 10px auto 0 auto;
+    @media(max-width: $TabletLG) {
+      margin: 0 auto;
+      line-height: 24px;
+    }
   }
 }

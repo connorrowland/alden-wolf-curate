@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import * as $ from 'jquery';
+import SlickCarousel from 'slick-carousel';
+import Carousel from './Carousel';
 
 // CSS
 import 'normalize.css';
@@ -16,6 +18,7 @@ import PreFooter from './Components/PreFooter';
 // Views
 import LandingPage from './Views/Landing';
 import PlatformPage from './Views/Platform';
+import PublishersPage from './Views/Publishers';
 import NoMatch from './Views/NoMatch';
 
 const title = 'Story Ventures';
@@ -24,15 +27,19 @@ const routes = [
     title: 'Curate Mobile',
     path: '/',
     component: LandingPage,
-    exact: true,
-    id: "page--landing"
+    exact: true
   },
   {
     title: 'Curate Mobile — Platform',
     path: '/platform',
     component: PlatformPage,
-    exact: true,
-    id: "page--platform"
+    exact: true
+  },
+  {
+    title: 'Curate Mobile — Publishers',
+    path: '/publishers',
+    component: PublishersPage,
+    exact: true
   }
 ];
 
