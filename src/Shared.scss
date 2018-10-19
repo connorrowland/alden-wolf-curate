@@ -189,6 +189,19 @@ button,.button {
   }
 }
 
+.button--light-blue {
+  background-color: $BlueOne;
+  color: $White;
+  &:hover {
+    background-color: #1A5692;
+    color: $White;
+  }
+  &:focus {
+    background-color: #003C78;
+    color: $White;
+  }
+}
+
 .text--white {
   color: $White;
 }
@@ -483,8 +496,14 @@ button,.button {
   background-color: $Black;
   .footer--end-col,.footer--inner {
     padding: 80px 115px 50px 115px;
+    @media(max-width: $Desk){
+      padding: 80px 45px 50px 45px;
+    }
     @media(max-width: $TabletLG){
       padding: 50px 30px 40px 30px;
+    }
+    @media(max-width: $Tablet){
+      padding: 40px 30px;
     }
   }
   .footer--inner {
@@ -496,7 +515,14 @@ button,.button {
         width: 400px;
       }
       @media(max-width: $TabletLG) {
+        width: 350px;
+      }
+      @media(max-width: $Tablet) {
         margin-bottom: 30px;
+        width: 250px;
+        flex-direction: column;
+      }
+      @media(max-width: $Phone) {
         width: 100%;
       }
       .footer--col {
@@ -509,6 +535,7 @@ button,.button {
           display: block;
           @media(max-width: $DeskLG) {
             font-size: 20px;
+            line-height: 40px;
           }
           @media(max-width: $TabletLG) {
             font-size: 18px;
@@ -520,6 +547,16 @@ button,.button {
     .footer--right {
       width: 405px;
       margin-top: 10px;
+      @media(max-width: $TabletLG) {
+        width: 350px;
+      }
+      @media(max-width: $Tablet) {
+        flex-direction: column;
+        width: 250px;
+      }
+      @media(max-width: $Phone) {
+        width: 100%;
+      }
       #footer--address-col {
         width: 225px;
       }
@@ -547,7 +584,7 @@ button,.button {
         }
         #footer-col--phone {
           margin-bottom: 20px;
-          @media(max-width: $TabletLG) {
+          @media(max-width: $Tablet) {
             margin-top: 20px;
           }
         }
@@ -558,6 +595,9 @@ button,.button {
     text-align: center;
     padding-top: 0;
     padding-bottom: 50px;
+    @media(max-width: $TabletLG) {
+      flex-direction: column;
+    }
     p {
       color: $White;
       font-size: 16px;
@@ -655,6 +695,7 @@ button,.button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
   @media(max-width: $DeskLG) {
     width: 15px;
   }
@@ -781,4 +822,9 @@ button,.button {
       line-height: 24px;
     }
   }
+}
+
+#page-doesnt-exist {
+  text-align: center;
+  padding: 200px 0;
 }

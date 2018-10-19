@@ -383,6 +383,11 @@
 }
 
 #landing--success {
+  #landing-success--categories {
+    @media(max-width: $Tablet) {
+      flex-direction: column;
+    }
+  }
   #landing-success--inner {
     #landing-success--heading {
       width: 100%;

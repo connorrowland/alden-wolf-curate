@@ -1,6 +1,7 @@
 // Dependencies
 import React from 'react';
 import Helmet from 'react-helmet';
+import Slider from "react-slick";
 
 // Style
 import '../Landing.css';
@@ -16,16 +17,46 @@ import ProductMockup from '../Images/Landing_Product_Mockup.png';
 import MonitoringIcon from '../Images/Monitoring_Icon.png';
 import SecurityIcon from '../Images/Security_Icon.png';
 
-import AdOne from "../Images/landing_verticals/ecommerce.png";
-import AdTwo from "../Images/landing_verticals/lifestyle.png";
-import AdThree from "../Images/landing_verticals/entertainment.png";
-import AdFour from "../Images/landing_verticals/game.png";
-import AdFive from "../Images/landing_verticals/fitness.png";
-import AdSix from "../Images/landing_verticals/social.png";
-import AdSeven from "../Images/landing_verticals/finance.png";
-import AdEight from "../Images/landing_verticals/food.png";
-import AdNine from "../Images/landing_verticals/utilities.png";
-import AdTen from "../Images/landing_verticals/quick.png";
+import LeftArrow from "../Components/LeftSliderArrow";
+import RightArrow from "../Components/RightSliderArrow";
+
+import SuccessSlider from "../Components/SuccessSlider";
+
+const awardSliderSettings = {
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  dots: false,
+  prevArrow: <LeftArrow />,
+  nextArrow: <RightArrow />,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: false,
+        dots: false,
+        prevArrow: <LeftArrow />,
+        nextArrow: <RightArrow />
+      }
+    },
+    {
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: false,
+        dots: false,
+        prevArrow: <LeftArrow />,
+        nextArrow: <RightArrow />
+      }
+    }
+  ]
+};
 
 export default () => (
   <div id="landing-page">
@@ -152,18 +183,20 @@ export default () => (
         </div>
       </div>
       <div id="landing--award-carousel">
-        <div className="landing-award--carousel-item">
-          <h3>2018 E&Y Entrepreneur of the Year</h3>
-        </div>
-        <div className="landing-award--carousel-item">
-          <h3>2018 Canadian Business ‘Top New Growth Company’</h3>
-        </div>
-        <div className="landing-award--carousel-item">
-          <h3>Coalition Against Ad Fraud Member</h3>
-        </div>
-        <div className="landing-award--carousel-item">
-          <h3>Coalition Against Ad Fraud Member</h3>
-        </div>
+        <Slider {...awardSliderSettings}>
+          <div className="landing-award--carousel-item">
+            <h3>2018 E&Y Entrepreneur of the Year</h3>
+          </div>
+          <div className="landing-award--carousel-item">
+            <h3>2018 Canadian Business ‘Top New Growth Company’</h3>
+          </div>
+          <div className="landing-award--carousel-item">
+            <h3>Coalition Against Ad Fraud Member</h3>
+          </div>
+          <div className="landing-award--carousel-item">
+            <h3>Coalition Against Ad Fraud Member</h3>
+          </div>
+        </Slider>
       </div>
     </section>
 
@@ -173,56 +206,7 @@ export default () => (
           <div id="landing-success--heading">
             <h2>Proven success in a variety of categories</h2>
           </div>
-          <div id="landing-success--categories" className="flex--grid">
-            <div className="landing-success-category--text-col" id="success-text-col--1">
-              <p className="landing-success--category-item success-category--active" id="success-category-item--1">eCommerce</p>
-              <p className="landing-success--category-item" id="success-category-item--2">Lifestyle</p>
-              <p className="landing-success--category-item" id="success-category-item--3">Entertainment</p>
-              <p className="landing-success--category-item" id="success-category-item--4">Games</p>
-              <p className="landing-success--category-item" id="success-category-item--5">Health & Fitness</p>
-            </div>
-            <div id="landing-success-category--img-col">
-              <img src={AdOne} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdTwo} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdThree} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdFour} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdFive} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdSix} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdSeven} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdEight} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdNine} alt="Curate Ad" className="landing--category-ad-img"/>
-              <img src={AdTen} alt="Curate Ad" className="landing--category-ad-img"/>
-            </div>
-            <div className="landing-success-category--text-col" id="success-text-col--2">
-              <p className="landing-success--category-item" id="success-category-item--6">Social Media</p>
-              <p className="landing-success--category-item" id="success-category-item--7">Finance</p>
-              <p className="landing-success--category-item" id="success-category-item--8">Food & Drink</p>
-              <p className="landing-success--category-item" id="success-category-item--9">Utilities</p>
-              <p className="landing-success--category-item" id="success-category-item--10">Quick Service Restaurants</p>
-            </div>
-
-            <div id="landing-success-category--mobile-col">
-              <p className="landing-success--category-item success-category--active" id="success-category-item--1">eCommerce</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--2">Lifestyle</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--3">Entertainment</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--4">Games</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--5">Health & Fitness</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--6">Social Media</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--7">Finance</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--8">Food & Drink</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--9">Utilities</p>
-              <p className="success-category--bullet">&bull;</p>
-              <p className="landing-success--category-item" id="success-mobile-category-item--10">Quick Service Restaurants</p>
-            </div>
-          </div>
+          <SuccessSlider />
         </div>
       </div>
     </section>

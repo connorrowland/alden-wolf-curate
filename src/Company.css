@@ -1,0 +1,310 @@
+#company--header {
+  margin-top: 100px;
+  padding: 0 0 165px 0; }
+  @media (max-width: 768px) {
+    #company--header {
+      padding: 0 0 75px 0; } }
+  @media (max-width: 550px) {
+    #company--header {
+      padding: 0 0 50px 0; } }
+  #company--header #company-header-inner--text {
+    text-align: center;
+    margin-bottom: 90px; }
+    @media (max-width: 992px) {
+      #company--header #company-header-inner--text {
+        margin-bottom: 40px; } }
+    @media (max-width: 768px) {
+      #company--header #company-header-inner--text {
+        padding: 0 15px; } }
+    #company--header #company-header-inner--text h1 {
+      max-width: 750px;
+      margin: 0 auto 10px auto; }
+      @media (max-width: 992px) {
+        #company--header #company-header-inner--text h1 {
+          font-size: 60px;
+          line-height: 72px;
+          max-width: 575px; } }
+      @media (max-width: 768px) {
+        #company--header #company-header-inner--text h1 {
+          font-size: 36px;
+          line-height: 48px; } }
+    #company--header #company-header-inner--text p {
+      max-width: 940px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 37px; }
+      @media (max-width: 1200px) {
+        #company--header #company-header-inner--text p {
+          max-width: 700px; } }
+      @media (max-width: 992px) {
+        #company--header #company-header-inner--text p {
+          max-width: 600px;
+          font-size: 18px; } }
+      @media (max-width: 768px) {
+        #company--header #company-header-inner--text p {
+          font-size: 14px;
+          line-height: 32px; } }
+  @media (max-width: 768px) {
+    #company--header #company-header--attributes .company-header-attribute--container {
+      width: 100%;
+      text-align: center;
+      margin: 0 0 40px 0; } }
+  @media (max-width: 768px) {
+    #company--header #company-header--attributes .company-header-attribute--container:last-of-type {
+      margin: 0; } }
+  #company--header #company-header--attributes .company-header-attribute--container .company-attributes-icon--container {
+    height: 120px;
+    align-items: flex-end;
+    margin-bottom: 20px; }
+    @media (max-width: 768px) {
+      #company--header #company-header--attributes .company-header-attribute--container .company-attributes-icon--container {
+        justify-content: center;
+        margin-bottom: 10px;
+        height: unset;
+        align-items: center; } }
+  #company--header #company-header--attributes .company-header-attribute--container h2 {
+    line-height: 1;
+    color: #004386; }
+    @media (max-width: 992px) {
+      #company--header #company-header--attributes .company-header-attribute--container h2 {
+        font-size: 30px; } }
+  #company--header #company-header--attributes .company-header-attribute--container h3 {
+    color: #002142; }
+    @media (max-width: 992px) {
+      #company--header #company-header--attributes .company-header-attribute--container h3 {
+        font-size: 18px;
+        line-height: 1;
+        margin-top: 10px; } }
+  #company--header #toronto-icon {
+    width: 35px;
+    height: auto;
+    max-height: 115px; }
+    @media (max-width: 992px) {
+      #company--header #toronto-icon {
+        width: 30px; } }
+  #company--header #world-icon {
+    width: 85px;
+    height: auto;
+    max-height: 90px; }
+    @media (max-width: 992px) {
+      #company--header #world-icon {
+        width: 70px; } }
+  #company--header #phone-icon {
+    width: 65px;
+    height: auto;
+    max-height: 115px; }
+    @media (max-width: 992px) {
+      #company--header #phone-icon {
+        width: 55px; } }
+  #company--header #client-icon {
+    width: 90px;
+    height: auto;
+    max-height: 105px; }
+    @media (max-width: 992px) {
+      #company--header #client-icon {
+        width: 80px; } }
+
+#company--team {
+  background: #040B4E;
+  padding: 0 0 165px 0; }
+  @media (max-width: 768px) {
+    #company--team {
+      padding: 0 0 75px 0; } }
+  @media (max-width: 550px) {
+    #company--team {
+      padding: 0 0 50px 0; } }
+  #company--team #company-team--photo-container {
+    padding: 35px 35px 0 35px;
+    margin-bottom: 100px; }
+    @media (max-width: 768px) {
+      #company--team #company-team--photo-container {
+        margin-bottom: 40px; } }
+    #company--team #company-team--photo-container img {
+      width: 100%; }
+  #company--team #company-team--intro-text {
+    text-align: center;
+    margin-bottom: 80px; }
+    @media (max-width: 768px) {
+      #company--team #company-team--intro-text {
+        margin-bottom: 40px;
+        padding: 0 15px; } }
+    #company--team #company-team--intro-text h1 {
+      color: #FFFFFF;
+      max-width: 600px;
+      margin: 0 auto; }
+      @media (max-width: 992px) {
+        #company--team #company-team--intro-text h1 {
+          font-size: 60px;
+          line-height: 72px; } }
+      @media (max-width: 768px) {
+        #company--team #company-team--intro-text h1 {
+          font-size: 36px;
+          line-height: 48px;
+          margin: 0 auto 10px auto; } }
+    #company--team #company-team--intro-text p {
+      color: #FFFFFF;
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 37px; }
+      @media (max-width: 768px) {
+        #company--team #company-team--intro-text p {
+          font-size: 14px;
+          line-height: 32px; } }
+      @media (max-width: 550px) {
+        #company--team #company-team--intro-text p {
+          max-width: 260px; } }
+      @media (max-width: 768px) {
+        #company--team #company-team--intro-text p br {
+          display: none; } }
+  @media (max-width: 768px) {
+    #company--team #company-team--members-container {
+      padding: 0 15px; } }
+  #company--team #company-team--members-container .team-member--large h2, #company--team #company-team--members-container .team-member--large h3, #company--team #company-team--members-container .team-member--large p, #company--team #company-team--members-container .team-member--small h2, #company--team #company-team--members-container .team-member--small h3, #company--team #company-team--members-container .team-member--small p {
+    color: #FFFFFF; }
+  #company--team #company-team--members-container .team-member--large p, #company--team #company-team--members-container .team-member--small p {
+    font-size: 16px;
+    line-height: 37px; }
+    @media (max-width: 992px) {
+      #company--team #company-team--members-container .team-member--large p, #company--team #company-team--members-container .team-member--small p {
+        font-size: 14px;
+        line-height: 32px; } }
+  #company--team #company-team--members-container .team-member--large h3, #company--team #company-team--members-container .team-member--small h3 {
+    font-size: 20px;
+    line-height: 36px; }
+    @media (max-width: 992px) {
+      #company--team #company-team--members-container .team-member--large h3, #company--team #company-team--members-container .team-member--small h3 {
+        font-size: 16px;
+        line-height: 36px; } }
+    @media (max-width: 768px) {
+      #company--team #company-team--members-container .team-member--large h3, #company--team #company-team--members-container .team-member--small h3 {
+        line-height: 24px; } }
+  #company--team #company-team--members-container .team-member--large {
+    max-width: 475px;
+    margin-bottom: 80px; }
+    @media (max-width: 1200px) {
+      #company--team #company-team--members-container .team-member--large {
+        max-width: 400px; } }
+    @media (max-width: 992px) {
+      #company--team #company-team--members-container .team-member--large {
+        max-width: 300px; } }
+    @media (max-width: 768px) {
+      #company--team #company-team--members-container .team-member--large {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 40px; } }
+    @media (max-width: 992px) {
+      #company--team #company-team--members-container .team-member--large h2 {
+        font-size: 35px;
+        line-height: 46px; } }
+    @media (max-width: 768px) {
+      #company--team #company-team--members-container .team-member--large h2 {
+        font-size: 28px;
+        line-height: 42px; } }
+  #company--team #company-team--members-container .team-member--small {
+    max-width: 300px; }
+    @media (max-width: 992px) {
+      #company--team #company-team--members-container .team-member--small {
+        width: 32%; } }
+    @media (max-width: 768px) {
+      #company--team #company-team--members-container .team-member--small {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px; } }
+    @media (max-width: 768px) {
+      #company--team #company-team--members-container .team-member--small:last-of-type {
+        margin-bottom: 0; } }
+    #company--team #company-team--members-container .team-member--small h2 {
+      font-size: 35px;
+      line-height: 46px; }
+      @media (max-width: 992px) {
+        #company--team #company-team--members-container .team-member--small h2 {
+          font-size: 28px;
+          line-height: 46px; } }
+      @media (max-width: 768px) {
+        #company--team #company-team--members-container .team-member--small h2 {
+          line-height: 42px; } }
+  #company--team #company-team--rule {
+    width: 100%;
+    height: 1px;
+    background: #363B71;
+    margin: 80px 0; }
+    @media (max-width: 768px) {
+      #company--team #company-team--rule {
+        margin: 35px 0; } }
+  #company--team #company-team--hiring {
+    text-align: center; }
+    @media (max-width: 768px) {
+      #company--team #company-team--hiring {
+        padding: 0 15px; } }
+    #company--team #company-team--hiring h1 {
+      color: #FFFFFF;
+      margin: 0 auto 20px auto; }
+      @media (max-width: 992px) {
+        #company--team #company-team--hiring h1 {
+          font-size: 60px;
+          line-height: 72px; } }
+      @media (max-width: 768px) {
+        #company--team #company-team--hiring h1 {
+          font-size: 36px;
+          line-height: 48px; } }
+    #company--team #company-team--hiring p {
+      color: #FFFFFF;
+      margin: 0 auto 30px auto;
+      font-size: 20px;
+      line-height: 37px;
+      max-width: 650px; }
+      @media (max-width: 768px) {
+        #company--team #company-team--hiring p {
+          font-size: 14px;
+          line-height: 32px; } }
+      @media (max-width: 550px) {
+        #company--team #company-team--hiring p {
+          max-width: 260px; } }
+    #company--team #company-team--hiring .button {
+      width: 265px; }
+
+#company--news #company-news--intro-text {
+  margin-bottom: 40px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    #company--news #company-news--intro-text {
+      padding: 0 15px;
+      margin: 0 auto 20px auto; } }
+  #company--news #company-news--intro-text h1 {
+    color: #000000;
+    max-width: 750px;
+    margin: 0 auto; }
+    @media (max-width: 992px) {
+      #company--news #company-news--intro-text h1 {
+        font-size: 60px;
+        line-height: 72px; } }
+    @media (max-width: 768px) {
+      #company--news #company-news--intro-text h1 {
+        font-size: 36px;
+        line-height: 48px; } }
+  #company--news #company-news--intro-text p {
+    font-size: 20px;
+    line-height: 37px; }
+    @media (max-width: 768px) {
+      #company--news #company-news--intro-text p {
+        font-size: 14px;
+        line-height: 32px;
+        max-width: 250px;
+        margin: 0 auto; } }
+
+#company--news #company-news--items {
+  margin: 0 auto;
+  padding: 0 40px; }
+  @media (max-width: 768px) {
+    #company--news #company-news--items {
+      flex-direction: column;
+      align-items: center; } }
+  #company--news #company-news--items .company-news-item--image {
+    height: auto;
+    width: 32%; }
+    @media (max-width: 768px) {
+      #company--news #company-news--items .company-news-item--image {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 15px; } }

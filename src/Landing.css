@@ -327,6 +327,10 @@
             line-height: 18px;
             max-width: 130px; } }
 
+@media (max-width: 768px) {
+  #landing--success #landing-success--categories {
+    flex-direction: column; } }
+
 #landing--success #landing-success--inner #landing-success--heading {
   width: 100%;
   text-align: center;

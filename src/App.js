@@ -1,10 +1,13 @@
 // Dependencies
+import 'matchmedia-polyfill';
+import 'matchmedia-polyfill/matchMedia.addListener';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import * as $ from 'jquery';
-import SlickCarousel from 'slick-carousel';
-import Carousel from './Carousel';
+
+// import SlickCarousel from 'slick-carousel';
+// import Carousel from './Carousel';
 
 // CSS
 import 'normalize.css';
@@ -19,6 +22,7 @@ import PreFooter from './Components/PreFooter';
 import LandingPage from './Views/Landing';
 import PlatformPage from './Views/Platform';
 import PublishersPage from './Views/Publishers';
+import CompanyPage from './Views/Company';
 import NoMatch from './Views/NoMatch';
 
 const title = 'Story Ventures';
@@ -39,6 +43,12 @@ const routes = [
     title: 'Curate Mobile — Publishers',
     path: '/publishers',
     component: PublishersPage,
+    exact: true
+  },
+  {
+    title: 'Curate Mobile — Company & Events',
+    path: '/company',
+    component: CompanyPage,
     exact: true
   }
 ];
