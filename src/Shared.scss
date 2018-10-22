@@ -235,7 +235,10 @@ button,.button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   @media(max-width: $Phone) {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -253,13 +256,21 @@ button,.button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   @media(max-width: $Tablet) {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .flex--grid--col-orient {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex-trio--item {
@@ -319,9 +330,16 @@ button,.button {
   #mobile-flyout--trigger {
     display: none;
     @media(max-width: $Tablet){
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       height: 12px;
       margin-right: 15px;
     }
@@ -442,14 +460,23 @@ button,.button {
     padding: 0 35px;
     @media(max-width: $Tablet){
       margin: 0;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       position: relative;
       padding: 0 15px;
     }
     .nav-inner--left {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       .nav-inner-left--links {
         @media(max-width: $Tablet){
           display: none;
@@ -520,7 +547,10 @@ button,.button {
       @media(max-width: $Tablet) {
         margin-bottom: 30px;
         width: 250px;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
       }
       @media(max-width: $Phone) {
         width: 100%;
@@ -551,7 +581,10 @@ button,.button {
         width: 350px;
       }
       @media(max-width: $Tablet) {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 250px;
       }
       @media(max-width: $Phone) {
@@ -596,7 +629,10 @@ button,.button {
     padding-top: 0;
     padding-bottom: 50px;
     @media(max-width: $TabletLG) {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
     p {
       color: $White;
@@ -613,7 +649,10 @@ button,.button {
     }
     #footer--social-links {
       @media(max-width: $TabletLG) {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         margin: 0 auto;
       }
       img {
@@ -644,7 +683,9 @@ button,.button {
     padding: 15px 0 65px 0;
   }
   .contact-pre-footer--inner {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     @media(max-width: $TabletLG) {
       padding: 0 30px;
     }
@@ -654,6 +695,7 @@ button,.button {
     height: 355px;
     margin: 0 180px;
     background-color: #235C95;
+    display: inline-block;
     @media(max-width: $DeskLG) {
       margin: 0 100px;
     }
@@ -668,6 +710,7 @@ button,.button {
     width: 45%;
     max-width: 350px;
     padding-top: 50px;
+    display: inline-block;
     @media(max-width: $DeskLG) {
       max-width: 300px;
     }
@@ -694,7 +737,9 @@ button,.button {
   height: auto;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
   @media(max-width: $DeskLG) {
     width: 15px;
@@ -786,12 +831,26 @@ button,.button {
 
 .trio-image-text--item {
   text-align: center;
+  @media(max-width: $Tablet) {
+    margin-bottom: 40px;
+  }
+  &:last-of-type {
+    @media(max-width: $Tablet) {
+      margin-bottom: 0;
+    }
+  }
   .trio-image--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100px;
     width: 115px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
     @media(max-width: $TabletLG) {
       width: 45px;
@@ -809,13 +868,13 @@ button,.button {
     line-height: 39px;
     margin-top: 10px;
     @media(max-width: $TabletLG) {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
   p {
     font-size: 14px;
     line-height: 29px;
-    max-width: 300px;
+    max-width: 250px;
     margin: 10px auto 0 auto;
     @media(max-width: $TabletLG) {
       margin: 0 auto;
@@ -827,4 +886,27 @@ button,.button {
 #page-doesnt-exist {
   text-align: center;
   padding: 200px 0;
+}
+
+.icon-text--trio-item {
+  text-align: center;
+  .icon-text-trio-item--image-container {
+    height: 120px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+    img {
+      max-width: 90px;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 47px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 29px;
+    max-width: 250px;
+    margin: 0 auto;
+  }
 }

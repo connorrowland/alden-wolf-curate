@@ -71,27 +71,27 @@ export default () => (
           <div className="team-member--large flex-duo--item">
             <h2>Marc Porcelli</h2>
             <h3>Founder & CEO</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+            <p>Extensive online marketing experience on both advertiser and network side. VP Sales @ Azoogle/Epic Advertising, CMO @ Singlesnet.com (sold to Match.com), CRO/GM @ Mundo Media.</p>
           </div>
           <div className="team-member--large flex-duo--item">
             <h2>Moufid Al-Joundi</h2>
-            <h3>Partner & Chief Revenue Officer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+            <h3>Partner & CRO</h3>
+            <p>Formerly Director Affiliate Marketing @ Singlesnet.com, Director Media Development @ Epic Advertising, VP @ Dealfind, CRO @ Mundo Media.</p>
           </div>
           <div className="team-member--small flex-trio--item">
             <h2>Rocky Appiah</h2>
             <h3>Chief Technology Officer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <p>15 years as a CTO in online digital advertising building omni-channel solutions to satisfy cutting edge business demands.  Formerly SVP Technology @ Epic Advertising, CTO/Founder @ Kinetic Social.</p>
           </div>
           <div className="team-member--small flex-trio--item">
-            <h2>Chad Frank</h2>
-            <h3>VP of Operations & Product</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <h2>Chad Lavallee</h2>
+            <h3>VP Operations & Product</h3>
+            <p>15 years of product management and operational experience across several disparate sub industries within the digital advertising ecosystem.  Formerly Sr. Product Manager @ AzoogleAds, VP Products @ AffNet.com, Chief Product Officer @ Admobix, Director of Product @ AcuityAds.</p>
           </div>
           <div className="team-member--small flex-trio--item">
-            <h2>Conrad Lavallee</h2>
+            <h2>Conrad Frank</h2>
             <h3>Chief Financial Officer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <p>10+ years of finance experience with a focus on system integration, automation, and data visualization. Formerly CFO @ Diamond Integrated Marketing.</p>
           </div>
         </div>
         <div id="company-team--rule"></div>

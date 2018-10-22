@@ -15,6 +15,27 @@ import PlatformHeroDesk from '../Images/Platform_Hero_Image.png';
 import PlatformHeroMobile from '../Images/Platform_Hero_Mobile.png';
 import CheckIcon from '../Images/Check_Icon.png';
 
+// Components
+import ValuePropsTrio from '../Components/ValuePropsTrio';
+
+const platformTrioItems = [
+  {
+    title: "Precise targeting",
+    body: "Define audience segments based on drilled-down, post-install engagement metrics.",
+    image: TargetingIcon
+  },
+  {
+    title: "Auto-optimization",
+    body: "Programmatically ensure that your top-performing creative gets front of your best customers.",
+    image: OptimizationIcon
+  },
+  {
+    title: "Transparent reporting",
+    body: "Understand performance data—and the levers we’re pulling to improve it—at a glance.",
+    image: ReportingIcon
+  },
+]
+
 export default () => (
   <div id="platform-page">
     <section id="platform--header">
@@ -39,29 +60,9 @@ export default () => (
           <div id="platform-performance-inner--text">
             <h2>Performance designed for your needs</h2>
           </div>
-          <div className="flex--grid" id="platform-performance--trio">
-            <div className="flex-trio--item platform-performance--trio-item">
-              <div className="performance-trio--image-container">
-                <img src={TargetingIcon} alt="Curate Icon" className="performance-trio--image"/>
-              </div>
-              <h3>Precise targeting</h3>
-              <p>Define audience segments based on drilled-down, post-install engagement metrics.</p>
-            </div>
-            <div className="flex-trio--item platform-performance--trio-item">
-              <div className="performance-trio--image-container">
-                <img src={OptimizationIcon} alt="Curate Icon" className="performance-trio--image"/>
-              </div>
-              <h3>Auto-optimization</h3>
-              <p>Programmatically ensure that your top-performing creative gets front of your best customers.</p>
-            </div>
-            <div className="flex-trio--item platform-performance--trio-item">
-              <div className="performance-trio--image-container">
-                <img src={ReportingIcon} alt="Curate Icon" className="performance-trio--image"/>
-              </div>
-              <h3>Transparent reporting</h3>
-              <p>Understand performance data—and the levers we’re pulling to improve it—at a glance.</p>
-            </div>
-          </div>
+          <ValuePropsTrio
+            items={platformTrioItems}
+          />
         </div>
       </div>
     </section>

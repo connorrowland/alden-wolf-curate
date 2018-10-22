@@ -65,7 +65,9 @@
     margin: 0 auto;
     top: -90px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     @media(max-width: $TabletLG) {
       width: 650px;
       top: -70px;
@@ -84,7 +86,9 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+          -ms-transform: translateY(-50%) translateX(-50%);
+              transform: translateY(-50%) translateX(-50%);
     }
     @media(max-width: $Phone) {
       max-width: 300px;
@@ -103,6 +107,7 @@
   }
   #platform-performance-inner--text {
     text-align: center;
+    margin-bottom: 40px;
     h2 {
       @media(max-width: $TabletLG) {
         max-width: 500px;
@@ -129,11 +134,17 @@
       }
       .performance-trio--image-container {
         height: 180px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         @media(max-width: $Tablet) {
           height: 75px;
-          align-items: flex-start;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
           margin-bottom: 20px;
         }
         .performance-trio--image {
@@ -240,9 +251,16 @@
     }
   }
   .curate-alert--attribute-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 15px;
     .curate-alert-check--image {
       width: 20px;

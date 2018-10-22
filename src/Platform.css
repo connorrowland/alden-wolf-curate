@@ -56,6 +56,8 @@
     margin: 0 auto;
     top: -90px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
     @media (max-width: 992px) {
       #platform--image #platform--product-image-desk {
@@ -75,6 +77,8 @@
         position: absolute;
         left: 50%;
         top: 50%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
         transform: translateY(-50%) translateX(-50%); } }
     @media (max-width: 550px) {
       #platform--image #platform--product-image-mobile {
@@ -89,7 +93,8 @@
     padding-top: 120px; } }
 
 #platform--performance #platform-performance-inner--text {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
   @media (max-width: 992px) {
     #platform--performance #platform-performance-inner--text h2 {
       max-width: 500px;
@@ -114,11 +119,17 @@
         margin-bottom: 40px; } }
     #platform--performance #platform-performance--trio .platform-performance--trio-item .performance-trio--image-container {
       height: 180px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center; }
       @media (max-width: 768px) {
         #platform--performance #platform-performance--trio .platform-performance--trio-item .performance-trio--image-container {
           height: 75px;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
           align-items: flex-start;
           margin-bottom: 20px; } }
       #platform--performance #platform-performance--trio .platform-performance--trio-item .performance-trio--image-container .performance-trio--image {
@@ -210,8 +221,15 @@
           margin-top: 10px;
           font-size: 16px; } }
   #platform--curate-alert .curate-alert--attribute-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 15px; }
     #platform--curate-alert .curate-alert--attribute-container .curate-alert-check--image {

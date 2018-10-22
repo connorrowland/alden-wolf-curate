@@ -20,6 +20,8 @@
         margin: 0 10px;
         display: inline-block;
         position: relative;
+        opacity: 0.3;
+        transition: opacity 0.3s ease-in-out;
         @media(max-width: $TabletLG) {
           width: 400px;
           height: 200px;
@@ -49,6 +51,10 @@
   }
 }
 
+.publishers--ad-active {
+  opacity: 1 !important;
+}
+
 #publishers--features {
   padding: 0 0 165px 0;
   @media(max-width: $Tablet) {
@@ -56,7 +62,10 @@
   }
   .publishers-features--item-left {
     @media(max-width: $Tablet) {
-      flex-direction: column-reverse;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
     }
     img {
       @media(max-width: $Tablet) {
@@ -83,7 +92,9 @@
     }
   }
   .publishers-features--item-right,.publishers-features--item-left {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 125px;
     @media(max-width: $Tablet) {
       margin-bottom: 55px;
@@ -189,11 +200,18 @@
     }
   }
   #partners--logos-container {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 175px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     @media(max-width: $Tablet) {
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       height: 140px;
     }
     @media(max-width: $Phone) {

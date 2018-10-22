@@ -79,14 +79,21 @@
       margin-bottom: 40px;
       width: 45%;
       text-align: center;
+      display: inline-block;
       @media(max-width: $Phone) {
         width: 100%;
       }
       .landing-process-attribute--icon-container {
         height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         @media(max-width: $Tablet) {
           margin-bottom: 20px;
         }
@@ -233,9 +240,15 @@
       #landing-optimization--links {
         .landing-optimization--link-column {
           width: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
           @media(max-width: $TabletLG) {
             width: 100%;
           }
@@ -286,6 +299,7 @@
     }
     .landing-features--item {
       max-width: 450px;
+      display: inline-block;
       @media(max-width: $Desk) {
         max-width: 385px;
       }
@@ -367,7 +381,9 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translateX(-50%) translateY(-60%);
+        -webkit-transform: translateX(-50%) translateY(-60%);
+            -ms-transform: translateX(-50%) translateY(-60%);
+                transform: translateX(-50%) translateY(-60%);
         @media(max-width: $Desk) {
           font-size: 16px;
           line-height: 22px;
@@ -385,7 +401,10 @@
 #landing--success {
   #landing-success--categories {
     @media(max-width: $Tablet) {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
   }
   #landing-success--inner {
@@ -406,6 +425,9 @@
           margin: 0 auto;
         }
         @media(max-width: $TabletLG) {
+          max-width: 500px;
+        }
+        @media(max-width: $Tablet) {
           max-width: 300px;
         }
       }
@@ -413,6 +435,7 @@
     .landing-success-category--text-col {
       width: 315px;
       padding-top: 70px;
+      display: inline-block;
       @media(max-width: $DeskLG) {
         width: 230px;
       }
@@ -447,11 +470,16 @@
     #landing-success-category--mobile-col {
       display: none;
       @media(max-width: $Tablet) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         text-align: center;
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         max-width: 275px;
         margin: 30px auto 0 auto;
       }
@@ -464,6 +492,7 @@
     }
     #landing-success-category--img-col {
       width: 305px;
+      display: inline-block;
       @media(max-width: $DeskLG) {
         width: 225px;
       }

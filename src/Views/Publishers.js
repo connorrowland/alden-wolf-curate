@@ -28,6 +28,28 @@ import AppsFlyerLogo from '../Images/Publishers_Logos/AppsFlyer_Logo.png'
 import BlueKaiLogo from '../Images/Publishers_Logos/BlueKai_Logo.png'
 import TenjinLogo from '../Images/Publishers_Logos/Tenjin_Logo.png'
 
+// Components
+import ValuePropsTrio from '../Components/ValuePropsTrio';
+import PublisherAds from '../Components/PublisherAds';
+
+const publishersTrioItems = [
+  {
+    title: "Intuitive design",
+    body: "Start monetizing in minutes with user-friendly tools that won’t slow down.",
+    image: DesignIcon
+  },
+  {
+    title: "Top-notch support",
+    body: "Get hands-on guidance from a marketers with years of experience in the field.",
+    image: SupportIcon
+  },
+  {
+    title: "Simple integration",
+    body: "Use Curate seamlessly with hundreds of integration-ready platforms and services.",
+    image: IntegrationIcon
+  },
+]
+
 export default () => (
   <div id="publishers-page">
     <section id="publishers--header" className="centered-text--header">
@@ -41,22 +63,7 @@ export default () => (
       </div>
     </section>
 
-    <section id="publishers--ads">
-      <div id="publishers--ads-container" className="flex--grid-no-justify">
-        <div className="publishers-ads--row" id="publishers-ads--row-1">
-          <img src={AdThree} alt="Curate Sample Ad" className="publishers--ad"/>
-          <img src={AdOne} alt="Curate Sample Ad" className="publishers--ad"/>
-          <img src={AdFive} alt="Curate Sample Ad" className="publishers--ad"/>
-          <img src={AdTwo} alt="Curate Sample Ad" className="publishers--ad"/>
-        </div>
-        <div className="publishers-ads--row" id="publishers-ads--row-2">
-          <img src={AdTwo} alt="Curate Sample Ad" className="publishers--ad"/>
-          <img src={AdFour} alt="Curate Sample Ad" className="publishers--ad"/>
-          <img src={AdSix} alt="Curate Sample Ad" className="publishers--ad"/>
-          <img src={AdOne} alt="Curate Sample Ad" className="publishers--ad"/>
-        </div>
-      </div>
-    </section>
+    <PublisherAds />
 
     <div className="rule--gray"></div>
 
@@ -94,29 +101,9 @@ export default () => (
           <div id="up-running--intro-text">
             <h2>Get up and running fast.</h2>
           </div>
-          <div className="flex--grid">
-            <div className="flex-trio--item trio-image-text--item">
-              <div className="trio-image--container">
-                <img src={DesignIcon} alt="Curate Sample Ad" className="publishers--ad"/>
-              </div>
-              <h3>Intuitive design</h3>
-              <p>Start monetizing in minutes with user-friendly tools that won’t slow down.</p>
-            </div>
-            <div className="flex-trio--item trio-image-text--item">
-              <div className="trio-image--container">
-                <img src={SupportIcon} alt="Curate Sample Ad" className="publishers--ad"/>
-              </div>
-              <h3>Top-notch support</h3>
-              <p>Get hands-on guidance from a marketers with years of experience in the field.</p>
-            </div>
-            <div className="flex-trio--item trio-image-text--item">
-              <div className="trio-image--container">
-                <img src={IntegrationIcon} alt="Curate Sample Ad" className="publishers--ad"/>
-              </div>
-              <h3>Simple integration</h3>
-              <p>Use Curate seamlessly with hundreds of integration-ready platforms and services.</p>
-            </div>
-          </div>
+          <ValuePropsTrio
+            items={publishersTrioItems}
+          />
         </div>
       </div>
     </section>
