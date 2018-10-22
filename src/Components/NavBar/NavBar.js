@@ -45,9 +45,9 @@ class NavBar extends Component {
               <div id="mobile-flyout--divider"></div>
             </div>
             <div className="mobile-flyout--links-container">
-              <NavLink to="/Platform" className="nav--link" activeClassName="nav--link-selected">Platform</NavLink>
-              <NavLink to="/Publishers" className="nav--link" activeClassName="nav--link-selected">Publishers</NavLink>
-              <NavLink to="/Company" className="nav--link" activeClassName="nav--link-selected">Company & Events</NavLink>
+              <NavLink to="/Platform" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Platform</NavLink>
+              <NavLink to="/Publishers" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Publishers</NavLink>
+              <NavLink to="/Company" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Company & Events</NavLink>
             </div>
           </div>
         </div>

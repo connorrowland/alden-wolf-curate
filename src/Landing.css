@@ -241,7 +241,7 @@
       #landing--optimization #landing-optimization-inner--mockup {
         position: relative;
         bottom: 0;
-        top: unset; } }
+        top: 0; } }
     @media (max-width: 768px) {
       #landing--optimization #landing-optimization-inner--mockup {
         width: 290px; } }
@@ -400,7 +400,7 @@
       line-height: 60px; } }
   @media (max-width: 768px) {
     #landing--success #landing-success--inner .landing-success--category-item {
-      width: unset;
+      width: auto;
       line-height: 30px; } }
 
 #landing--success #landing-success--inner .success-category--bullet {
@@ -448,3 +448,9 @@
 #landing--success .success-category--active {
   color: #850201 !important;
   text-decoration: underline; }
+
+.success-category-item--mobile-container {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important; }

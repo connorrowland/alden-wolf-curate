@@ -169,7 +169,9 @@
     height: 175px;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto; }
     @media (max-width: 768px) {
       #publishers--partners #partners--logos-container {
         -webkit-box-orient: horizontal;

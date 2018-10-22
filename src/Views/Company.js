@@ -11,9 +11,9 @@ import WorldIcon from '../Images/World_Icon.png';
 import PhoneIcon from '../Images/Phone_Icon.png';
 import ClientsIcon from '../Images/Clients_Icon.png';
 import TeamPhoto from '../Images/Team_Photo.png';
-import SampleAd1 from '../Images/Sample_Ad1.png';
-import SampleAd2 from '../Images/Sample_Ad2.png';
-import SampleAd3 from '../Images/Sample_Ad3.png';
+import SampleAd1 from '../Images/SampleAd1.png';
+import SampleAd2 from '../Images/SampleAd2.png';
+import SampleAd3 from '../Images/SampleAd3.png';
 
 export default () => (
   <div id="company-page">

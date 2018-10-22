@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import FacebookLogo from "../Images/Facebook_Logo.png";
 import LinkedinLogo from "../Images/Linkedin_Logo.png";
 
@@ -9,12 +10,11 @@ class Footer extends Component {
         <div className="flex--grid footer--inner">
           <div className="footer--left flex--grid">
             <div className="footer--col">
-              <a href="" className="footer-link--lg">About us</a>
-              <a href="" className="footer-link--lg">How it works</a>
-              <a href="" className="footer-link--lg">News & Events</a>
+              <NavLink to="/Platform" className="footer-link--lg">Platform</NavLink>
+              <NavLink to="/Publishers" className="footer-link--lg">Publishers</NavLink>
+              <NavLink to="/Company" className="footer-link--lg">Company & Events</NavLink>
             </div>
             <div className="footer--col">
-              <a href="" className="footer-link--lg">Publishers</a>
               <a href="" className="footer-link--lg">Terms & Conditions</a>
               <a href="" className="footer-link--lg">Privacy Policy</a>
             </div>

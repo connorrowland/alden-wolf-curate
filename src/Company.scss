@@ -30,6 +30,10 @@
         font-size: 36px;
         line-height: 48px;
       }
+      @media(max-width: $Phone) {
+        font-size: 32px;
+        line-height: 46px;
+      }
     }
     p {
       max-width: 940px;

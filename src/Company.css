@@ -28,6 +28,10 @@
         #company--header #company-header-inner--text h1 {
           font-size: 36px;
           line-height: 48px; } }
+      @media (max-width: 550px) {
+        #company--header #company-header-inner--text h1 {
+          font-size: 32px;
+          line-height: 46px; } }
     #company--header #company-header-inner--text p {
       max-width: 940px;
       margin: 0 auto;

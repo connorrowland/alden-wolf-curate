@@ -207,6 +207,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
     @media(max-width: $Tablet) {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;

@@ -278,7 +278,7 @@
     @media(max-width: $TabletLG) {
       position: relative;
       bottom: 0;
-      top: unset;
+      top: 0;
     }
     @media(max-width: $Tablet) {
       width: 290px;
@@ -458,7 +458,7 @@
         line-height: 60px;
       }
       @media(max-width: $Tablet) {
-        width: unset;
+        width: auto;
         line-height: 30px;
       }
     }
@@ -510,4 +510,11 @@
     color: $Red !important;
     text-decoration: underline;
   }
+}
+
+.success-category-item--mobile-container {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
 }
