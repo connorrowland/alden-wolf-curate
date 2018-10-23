@@ -251,29 +251,27 @@
     }
   }
   .curate-alert--attribute-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-bottom: 15px;
     .curate-alert-check--image {
       width: 20px;
       height: auto;
       margin-right: 20px;
+      display: inline-block;
+      vertical-align: middle;
     }
     p {
       color: $White;
       font-size: 16px;
       line-height: 32px;
+      display: inline-block;
+      vertical-align: middle;
       @media(max-width: $Phone) {
         font-size: 12px;
         line-height: 28px;
+        max-width: 220px;
+      }
+      @media(max-width: $PhoneXS) {
+        max-width: 200px;
       }
     }
   }

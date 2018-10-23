@@ -186,7 +186,8 @@
         margin: 0 auto; } }
     #publishers--partners #partners--logos-container .publishers-logo--container {
       width: 260px;
-      text-align: center; }
+      text-align: center;
+      display: inline-block; }
       @media (max-width: 1100px) {
         #publishers--partners #partners--logos-container .publishers-logo--container {
           width: 190px; } }
@@ -195,7 +196,11 @@
           width: 150px; } }
       @media (max-width: 768px) {
         #publishers--partners #partners--logos-container .publishers-logo--container {
-          width: 130px; } }
+          width: 130px;
+          margin-bottom: 20px; } }
+      @media (max-width: 768px) {
+        #publishers--partners #partners--logos-container .publishers-logo--container:last-of-type {
+          margin-bottom: 0; } }
       #publishers--partners #partners--logos-container .publishers-logo--container .publishers--logo {
         width: 100px;
         height: auto; }

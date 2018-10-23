@@ -33,6 +33,10 @@
       @media (max-width: 550px) {
         #landing--header #landing-header--inner #landing-header-inner--text h2 {
           max-width: 275px; } }
+  @media (max-width: 768px) {
+    #landing--header #landing-header--inner #landing-hero-ad--container {
+      width: 100%;
+      text-align: center; } }
   #landing--header #landing-header--inner #landing-header-inner--ad {
     width: 255px;
     height: auto;
@@ -120,10 +124,12 @@
       padding-bottom: 225px; } }
   @media (max-width: 768px) {
     #landing--global-scaling {
-      padding-bottom: 150px; } }
+      padding-bottom: 150px;
+      padding-top: 75px; } }
   @media (max-width: 550px) {
     #landing--global-scaling {
-      padding-bottom: 100px; } }
+      padding-bottom: 100px;
+      padding-top: 50px; } }
   #landing--global-scaling #landing-global-scaling--text {
     text-align: center;
     max-width: 695px;
@@ -150,7 +156,7 @@
     left: 0; }
     @media (max-width: 992px) {
       #landing--global-scaling #landing-global-scaling--image {
-        bottom: -150px; } }
+        bottom: -115px; } }
     @media (max-width: 768px) {
       #landing--global-scaling #landing-global-scaling--image {
         bottom: -100px; } }
@@ -163,8 +169,8 @@
       max-height: 300px; }
       @media (max-width: 992px) {
         #landing--global-scaling #landing-global-scaling--image img {
-          width: 600px;
-          max-height: 300px; } }
+          width: 500px;
+          max-height: 250px; } }
       @media (max-width: 768px) {
         #landing--global-scaling #landing-global-scaling--image img {
           width: 400px;
@@ -233,6 +239,7 @@
         @media (max-width: 550px) {
           #landing--optimization #landing-optimization--inner #landing-optimization-inner--text #landing-optimization--links .landing-optimization--link-column .landing-optimization--link {
             font-size: 14px;
+            display: block;
             line-height: 32px; } }
   #landing--optimization #landing-optimization-inner--mockup {
     width: 550px;
@@ -407,29 +414,24 @@
   @media (max-width: 768px) {
     #landing--success #landing-success--inner .landing-success--category-item {
       width: auto;
-      line-height: 30px; } }
+      line-height: 30px;
+      display: inline-block; } }
 
 #landing--success #landing-success--inner .success-category--bullet {
   color: #7F7F7F;
-  display: inline;
+  display: inline-block;
   margin: 0 7.5px; }
 
-#landing--success #landing-success--inner #landing-success-category--mobile-col {
-  display: none; }
-  @media (max-width: 768px) {
-    #landing--success #landing-success--inner #landing-success-category--mobile-col {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 100%;
-      text-align: center;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      max-width: 275px;
-      margin: 30px auto 0 auto; } }
+@media (min-width: 768px) {
+  #landing--success #landing-success--inner #landing-success-category--mobile-col {
+    display: none; } }
+
+@media (max-width: 768px) {
+  #landing--success #landing-success--inner #landing-success-category--mobile-col {
+    width: 100%;
+    text-align: center;
+    max-width: 275px;
+    margin: 30px auto 0 auto; } }
 
 #landing--success #landing-success--inner #success-text-col--1 {
   text-align: right; }
@@ -445,18 +447,21 @@
       width: 225px; } }
   @media (max-width: 768px) {
     #landing--success #landing-success--inner #landing-success-category--img-col {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      width: 100%;
+      text-align: center; } }
   #landing--success #landing-success--inner #landing-success-category--img-col .landing--category-ad-img {
     width: 100%;
     height: auto;
     max-height: 615px; }
+    @media (max-width: 768px) {
+      #landing--success #landing-success--inner #landing-success-category--img-col .landing--category-ad-img {
+        max-width: 225px;
+        margin: 0 auto; } }
 
 #landing--success .success-category--active {
   color: #850201 !important;
   text-decoration: underline; }
 
 .success-category-item--mobile-container {
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-  -ms-flex-direction: row !important;
-  flex-direction: row !important; }
+  display: inline-block; }

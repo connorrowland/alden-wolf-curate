@@ -224,6 +224,7 @@
     .publishers-logo--container {
       width: 260px;
       text-align: center;
+      display: inline-block;
       @media(max-width: $Desk) {
         width: 190px;
       }
@@ -232,6 +233,12 @@
       }
       @media(max-width: $Tablet) {
         width: 130px;
+        margin-bottom: 20px;
+      }
+      &:last-of-type{
+        @media(max-width: $Tablet) {
+          margin-bottom: 0;
+        }
       }
       .publishers--logo {
         width: 100px;

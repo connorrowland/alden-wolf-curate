@@ -68,7 +68,9 @@ export default () => (
             <p>We empower brands and agencies with transparent, sustainable, performance-driven customer acquisition solutions.</p>
             <a className="button" href="">Get Started</a>
           </div>
-          <img src={LandingHeroAd} alt="Curate Mobile Ad" id="landing-header-inner--ad"/>
+          <div id="landing-hero-ad--container">
+            <img src={LandingHeroAd} alt="Curate Mobile Ad" id="landing-header-inner--ad"/>
+          </div>
         </div>
       </div>
     </section>

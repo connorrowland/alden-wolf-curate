@@ -457,18 +457,10 @@ button,.button {
       padding: 0 15px;
     }
     .nav-inner--left {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      flex: 1 1 0;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      display: inline-block;
+      float: left;
       .nav-inner-left--links {
+        display: inline-block;
         @media(max-width: $Tablet){
           display: none;
         }
@@ -491,6 +483,7 @@ button,.button {
     }
     .nav-inner--right {
       display: inline-block;
+      float: right;
       .button {
         padding: 18px 30px;
         @media(max-width: $TabletLG){
@@ -699,21 +692,19 @@ button,.button {
     }
   }
   .pre-footer--demographic-module {
-    width: 45%;
-    max-width: 350px;
+    width: 350px;
     padding-top: 50px;
     display: inline-block;
     @media(max-width: $DeskLG) {
-      max-width: 300px;
+      width: 300px;
     }
     @media(max-width: $TabletLG) {
-      max-width: 250px;
+      width: 250px;
       padding-top: 40px;
     }
     @media(max-width: $Tablet) {
-      max-width: 100%;
-      padding-top: 40px;
       width: 100%;
+      padding-top: 40px;
     }
     h2,p {
       color: $White;
