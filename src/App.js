@@ -24,6 +24,8 @@ import PlatformPage from './Views/Platform';
 import PublishersPage from './Views/Publishers';
 import CompanyPage from './Views/Company';
 import NoMatch from './Views/NoMatch';
+import Terms from './Views/Terms';
+import PrivacyPolicy from './Views/PrivacyPolicy';
 
 const title = 'Story Ventures';
 const routes = [
@@ -49,6 +51,20 @@ const routes = [
     title: 'Curate Mobile — Company & Events',
     path: '/company',
     component: CompanyPage,
+    exact: true
+  }
+  ,
+  {
+    title: 'Curate Mobile — Privacy Policy',
+    path: '/PrivacyPolicy',
+    component: PrivacyPolicy,
+    exact: true
+  }
+  ,
+  {
+    title: 'Curate Mobile — Terms & Conditions',
+    path: '/Terms',
+    component: Terms,
     exact: true
   }
 ];
