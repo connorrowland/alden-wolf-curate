@@ -15,8 +15,8 @@ class Footer extends Component {
               <NavLink to="/Company" className="footer-link--lg">Company & Events</NavLink>
             </div>
             <div className="footer--col">
-              <a href="" className="footer-link--lg">Terms & Conditions</a>
-              <a href="" className="footer-link--lg">Privacy Policy</a>
+              <NavLink to="/Terms" className="footer-link--lg">Terms & Conditions</NavLink>
+              <NavLink to="/PrivacyPolicy" className="footer-link--lg">Privacy Policy</NavLink>
             </div>
           </div>
           <div className="footer--right flex--grid">
