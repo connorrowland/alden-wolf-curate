@@ -15,7 +15,7 @@
         margin: 50px 0 0 0; } }
     @media (max-width: 992px) {
       #landing--header #landing-header--inner #landing-header-inner--text {
-        margin: 50px 0 0 0;
+        margin: 50px auto 50px auto;
         max-width: 350px; } }
     @media (max-width: 768px) {
       #landing--header #landing-header--inner #landing-header-inner--text {
@@ -30,7 +30,7 @@
     #landing--header #landing-header--inner #landing-header-inner--text h2 {
       color: #850201;
       max-width: 400px; }
-      @media (max-width: 768px) {
+      @media (max-width: 550px) {
         #landing--header #landing-header--inner #landing-header-inner--text h2 {
           max-width: 275px; } }
   #landing--header #landing-header--inner #landing-header-inner--ad {
@@ -40,11 +40,13 @@
     margin: 0 150px 0 0; }
     @media (max-width: 1200px) {
       #landing--header #landing-header--inner #landing-header-inner--ad {
-        width: 250px; } }
+        width: 250px;
+        margin: 0 100px 0 0; } }
     @media (max-width: 992px) {
       #landing--header #landing-header--inner #landing-header-inner--ad {
         width: 200px;
-        max-height: 405px; } }
+        max-height: 405px;
+        margin: 0 auto; } }
     @media (max-width: 768px) {
       #landing--header #landing-header--inner #landing-header-inner--ad {
         margin: 0 auto;
