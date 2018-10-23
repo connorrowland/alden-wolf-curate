@@ -330,23 +330,12 @@ button,.button {
   #mobile-flyout--trigger {
     display: none;
     @media(max-width: $Tablet){
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      height: 12px;
       margin-right: 15px;
+      display: inline-block;
     }
-    .navigation--burger-menu-line {
+    #burger-menu--icon {
       width: 14px;
-      height: 2px;
-      background-color: $Black;
+      height: 10px;
     }
   }
   .mobile-flyout--container {
@@ -501,6 +490,7 @@ button,.button {
       }
     }
     .nav-inner--right {
+      display: inline-block;
       .button {
         padding: 18px 30px;
         @media(max-width: $TabletLG){
@@ -666,7 +656,7 @@ button,.button {
 }
 
 .section--normal {
-  padding: 165px 0;
+  padding: 125px 0;
   @media(max-width: $TabletLG) {
     padding: 125px 0;
   }
@@ -767,7 +757,7 @@ button,.button {
 }
 
 .section--header {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .nav--link-selected {

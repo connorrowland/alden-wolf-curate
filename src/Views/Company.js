@@ -21,7 +21,7 @@ export default () => (
       <div className="container">
         <div id="company-header--inner" className="section--header">
           <div id="company-header-inner--text">
-            <h1>We put people first.<br/> Our and yours.</h1>
+            <h2>We put people first.<br/> Our and yours.</h2>
             <p>Curate Mobile was built by industry veterans on a mission to bring transparency and ethical practices to the field of mobile advertising. We’re passionate about what we do and we hope it shows.</p>
           </div>
           <div id="company-header--attributes" className="flex--grid">

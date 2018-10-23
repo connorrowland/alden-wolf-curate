@@ -10,7 +10,7 @@
   #landing-header--inner {
     #landing-header-inner--text {
       max-width: 600px;
-      margin: 80px 0 0 0;
+      margin: 50px 0 0 50px;
       @media(max-width: $DeskLG) {
         max-width: 500px;
         margin: 50px 0 0 0;
@@ -24,23 +24,25 @@
         padding: 0 15px;
         margin: 0 0 40px 0;
       }
-      h1,p {
+      h2,p {
         margin-bottom: 20px;
         @media(max-width: $Tablet) {
           margin-bottom: 15px;
         }
       }
-      h1 {
+      h2 {
+        color: $Red;
+        max-width: 400px;
         @media(max-width: $Tablet) {
           max-width: 275px;
         }
       }
     }
     #landing-header-inner--ad {
-      width: 330px;
+      width: 255px;
       height: auto;
       max-height: 660px;
-      margin: 0 50px 0 0;
+      margin: 0 150px 0 0;
       @media(max-width: $DeskLG) {
         width: 250px;
       }
@@ -128,7 +130,8 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 230px;
+  padding-top: 130px;
   @media(max-width: $TabletLG) {
     padding-bottom: 225px;
   }
@@ -166,7 +169,7 @@
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: -187.5px;
+    bottom: -125px;
     left: 0;
     @media(max-width: $TabletLG) {
       bottom: -150px;
@@ -178,9 +181,9 @@
       bottom: -60px;
     }
     img {
-      width: 750px;
+      width: 600px;
       height: auto;
-      max-height: 375px;
+      max-height: 300px;
       @media(max-width: $TabletLG) {
         width: 600px;
         max-height: 300px;
@@ -267,7 +270,7 @@
     }
   }
   #landing-optimization-inner--mockup {
-    width: 600px;
+    width: 550px;
     height: auto;
     position: absolute;
     top: 300px;
@@ -411,7 +414,7 @@
     #landing-success--heading {
       width: 100%;
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       @media(max-width: $Tablet) {
         margin-bottom: 40px;
       }
@@ -434,7 +437,7 @@
     }
     .landing-success-category--text-col {
       width: 315px;
-      padding-top: 70px;
+      padding-top: 40px;
       display: inline-block;
       @media(max-width: $DeskLG) {
         width: 230px;
@@ -491,7 +494,7 @@
       text-align: left;
     }
     #landing-success-category--img-col {
-      width: 305px;
+      width: 265px;
       display: inline-block;
       @media(max-width: $DeskLG) {
         width: 225px;

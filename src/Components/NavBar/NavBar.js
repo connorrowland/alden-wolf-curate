@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import XIcon from './x_icon.png';
 import Logo from './Logo.png';
+import Hamburger from './Hamburger_Icon.png';
 
 class NavBar extends Component {
   constructor(props) {
@@ -56,9 +57,7 @@ class NavBar extends Component {
           <div className="nav--inner">
             <div className="nav-inner--left">
               <a href="#" className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>
-                <span className="navigation--burger-menu-line"></span>
-                <span className="navigation--burger-menu-line"></span>
-                <span className="navigation--burger-menu-line"></span>
+                <img src={Hamburger} alt="Hamburger Menu Icon" id="burger-menu--icon" />
               </a>
               <NavLink to="/" className="nav--logo">
                 <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />

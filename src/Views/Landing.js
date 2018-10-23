@@ -64,7 +64,7 @@ export default () => (
       <div className="container">
         <div id="landing-header--inner" className="flex--grid section--header">
           <div id="landing-header-inner--text">
-            <h1>Mobile growth you can trust.</h1>
+            <h2>Mobile growth you can trust.</h2>
             <p>We empower brands and agencies with transparent, sustainable, performance-driven customer acquisition solutions.</p>
             <a className="button" href="">Get Started</a>
           </div>

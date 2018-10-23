@@ -11,16 +11,14 @@
   }
   #company-header-inner--text {
     text-align: center;
-    margin-bottom: 90px;
-    @media(max-width: $TabletLG) {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
     @media(max-width: $Tablet) {
       padding: 0 15px;
     }
-    h1 {
+    h2 {
       max-width: 750px;
       margin: 0 auto 10px auto;
+      color: $Red;
       @media(max-width: $TabletLG) {
         font-size: 60px;
         line-height: 72px;
@@ -36,7 +34,7 @@
       }
     }
     p {
-      max-width: 940px;
+      max-width: 700px;
       margin: 0 auto;
       font-size: 20px;
       line-height: 37px;
@@ -66,7 +64,7 @@
         }
       }
       .company-attributes-icon--container {
-        height: 120px;
+        height: 95px;
         -webkit-box-align: end;
             -ms-flex-align: end;
                 align-items: flex-end;
@@ -84,6 +82,7 @@
       }
       h2 {
         line-height: 1;
+        font-size: 38px;
         color: $BlueOne;
         @media(max-width: $TabletLG) {
           font-size: 30px;
@@ -91,6 +90,8 @@
       }
       h3 {
         color: $Navy;
+        line-height: 36px;
+        font-size: 22px;
         @media(max-width: $TabletLG) {
           font-size: 18px;
           line-height: 1;
