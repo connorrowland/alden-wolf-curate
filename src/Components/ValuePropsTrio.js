@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class ValuePropsTrio extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   createItems = () => {
     const trioItems = this.props.items.map((item, i) => {
       return (

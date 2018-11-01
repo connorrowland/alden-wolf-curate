@@ -6,7 +6,6 @@ import Helmet from 'react-helmet';
 import '../Platform.css';
 
 // Images
-import LandingHeroAd from '../Images/01LandingPageAdHero.gif';
 import ShieldIcon from '../Images/Shield_Icon.png';
 import OptimizationIcon from '../Images/Optimization_Icon_2.png';
 import TargetingIcon from '../Images/Targeting_Icon_2.png';
@@ -26,7 +25,7 @@ const platformTrioItems = [
   },
   {
     title: "Auto-optimization",
-    body: "Programmatically ensure that your top-performing creative gets front of your best customers.",
+    body: "Programmatically ensure that your top-performing creative gets in front of your best customers.",
     image: OptimizationIcon
   },
   {
@@ -37,7 +36,7 @@ const platformTrioItems = [
 ]
 
 export default () => (
-  <div id="platform-page">
+  <div id="platform-page" className="page--body">
     <section id="platform--header">
       <div className="container">
         <div id="platform-header--inner" className="section--header">
@@ -50,8 +49,8 @@ export default () => (
     </section>
 
     <section id="platform--image" className="section--normal">
-      <img src={PlatformHeroDesk} alt="Curate Product Image" id="platform--product-image-desk"/>
-      <img src={PlatformHeroMobile} alt="Curate Product Image" id="platform--product-image-mobile"/>
+      <img src={PlatformHeroDesk} alt="Curate Product" id="platform--product-image-desk"/>
+      <img src={PlatformHeroMobile} alt="Curate Product" id="platform--product-image-mobile"/>
     </section>
 
     <section id="platform--performance">

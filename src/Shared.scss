@@ -51,17 +51,21 @@ h1 {
 h2 {
   font-family: 'GraphicMedium';
   font-size: 50px;
-  line-height: 69px;
+  line-height: 62px;
   margin: 0;
   color: $Navy;
   letter-spacing: -0.62px;
+  @media(max-width: 1300px) {
+    font-size: 48px;
+    line-height: 62px;
+  }
   @media(max-width: $TabletLG) {
     font-size: 44px;
     line-height: 62px;
   }
   @media(max-width: $Tablet) {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 36px;
+    line-height: 48px;
   }
 }
 
@@ -93,15 +97,11 @@ h4 {
 
 p {
   font-family: 'GraphicMedium';
-  font-size: 18px;
-  line-height: 37px;
+  font-size: 16px;
+  line-height: 34px;
   margin: 0;
   letter-spacing: -0.25px;
   color: $Black;
-  @media(max-width: $TabletLG) {
-    font-size: 16px;
-    line-height: 34px;
-  }
   @media(max-width: $Tablet) {
     font-size: 14px;
     line-height: 32px;
@@ -167,11 +167,11 @@ button,.button {
     padding: 14px 20px;
   }
   &:hover {
-    background-color: #790100;
+    background-color: #931B1A;
     color: $White;
   }
   &:focus {
-    background-color: #931B1A;
+    background-color: #790100;
     color: $White;
   }
 }
@@ -307,13 +307,10 @@ button,.button {
 .page {
   background: $White;
   overflow: hidden;
-  padding: 30px 0 0 0;
+  padding: 0;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  @media(max-width: $Tablet) {
-    padding: 15px 0 0 0;
-  }
 }
 
 #mobile-flyout--divider {
@@ -323,10 +320,16 @@ button,.button {
   margin-top: 25px;
 }
 
+#mobile-flyout--outer {
+  position: relative;
+}
+
 .nav--outer {
   left: 0;
   right: 0;
-  position: relative;
+  position: fixed;
+  background-color: $White;
+  z-index: 99;
   #mobile-flyout--trigger {
     display: none;
     @media(max-width: $Tablet){
@@ -408,7 +411,7 @@ button,.button {
     top: -380px;
   }
   .mobile-flyout--open {
-    top: -15px;
+    top: 0;
   }
   .nav-links--container {
     position: relative;
@@ -447,14 +450,14 @@ button,.button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0 35px;
+    padding: 30px 35px 15px 35px;
     @media(max-width: $Tablet){
       margin: 0;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
       position: relative;
-      padding: 0 15px;
+      padding: 15px;
     }
     .nav-inner--left {
       display: inline-block;
@@ -891,5 +894,15 @@ button,.button {
     line-height: 29px;
     max-width: 250px;
     margin: 0 auto;
+  }
+}
+
+.page--body {
+  padding-top: 117px;
+  @media(max-width: $Desk) {
+    padding-top: 100px;
+  }
+  @media(max-width: $TabletLG) {
+    padding-top: 93px;
   }
 }

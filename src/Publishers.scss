@@ -1,6 +1,9 @@
 @import "./Variables.scss";
 #Publishers {
   background-color: #F8F8F8;
+  .nav--outer {
+    background-color: #F8F8F8;
+  }
 }
 
 #publishers--header {
@@ -38,7 +41,7 @@
       }
     }
     #publishers-ads--row-1 {
-      left: -100px;
+      left: -50px;
     }
     #publishers-ads--row-2 {
       left: -300px;

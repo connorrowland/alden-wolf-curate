@@ -4,9 +4,14 @@
 }
 #landing--header {
   background-image: url("./Images/Landing_Graph_BG.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  min-height: 500px;
+  @media(max-width: $Tablet) {
+    background-image: url("./Images/Landing_Graph_BG_Mobile.png");
+    background-size: contain;
+  }
   #landing-header--inner {
     #landing-header-inner--text {
       max-width: 600px;
@@ -25,14 +30,21 @@
         margin: 0 0 40px 0;
       }
       h2,p {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         @media(max-width: $Tablet) {
-          margin-bottom: 15px;
+          margin-bottom: 5px;
         }
+      }
+      p {
+        max-width: 500px;
+        margin-bottom: 15px;
       }
       h2 {
         color: $Red;
         max-width: 400px;
+        @media(max-width: $Tablet) {
+          max-width: 300px;
+        }
         @media(max-width: $Phone) {
           max-width: 275px;
         }
@@ -167,6 +179,8 @@
       }
     }
     p {
+      max-width: 600px;
+      margin: 0 auto;
       @media(max-width: $Phone) {
         font-size: 18px;
         line-height: 37px;
@@ -268,8 +282,8 @@
           .landing-optimization--link {
             width: 100%;
             color: $Red;
-            font-size: 18px;
-            line-height: 38px;
+            font-size: 16px;
+            line-height: 34px;
             @media(max-width: $Phone) {
               font-size: 14px;
               display: block;
@@ -335,9 +349,9 @@
         margin-bottom: 0;
       }
       .landing-feature-item--icon {
-        width: 120px;
-        height: auto;
-        max-height: 160px;
+        width: auto;
+        height: 120px;
+        max-width: 120px;
         @media(max-width: $TabletLG) {
           width: 100px;
           margin-bottom: 10px;
@@ -352,6 +366,9 @@
 
 #landing--leadership {
   background-color: $Red;
+  background: url("./Images/Landing_Globe_Bg.png");
+  background-position: center;
+  background-size: cover;
   #landing-leadership--inner {
     text-align: center;
     max-width: 695px;
@@ -361,6 +378,13 @@
       @media(max-width: $Phone) {
         max-width: 300px;
         margin: 0 auto;
+      }
+    }
+    p {
+      max-width: 550px;
+      margin: 0 auto;
+      @media(max-width: $Tablet) {
+        max-width: 450px;
       }
     }
   }

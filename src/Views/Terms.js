@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 export default () => (
-  <div id="terms">
+  <div id="terms" className="page--body">
     <div className="container section--normal">
       <p>
         Last Updated: May 24, 2018<br/>

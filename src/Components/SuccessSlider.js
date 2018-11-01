@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-
-import LeftArrow from "./LeftSliderArrow";
-import RightArrow from "./RightSliderArrow";
 import AdOne from "../Images/landing_verticals/ecommerce.png";
 import AdTwo from "../Images/landing_verticals/lifestyle.png";
 import AdThree from "../Images/landing_verticals/entertainment.png";

@@ -1,6 +1,7 @@
 // Dependencies
 import 'matchmedia-polyfill';
 import 'matchmedia-polyfill/matchMedia.addListener';
+import ScrollToTop from 'react-router-scroll-top'
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Helmet from 'react-helmet';
@@ -73,22 +74,24 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Route render={(props) => {
-          return (
-            <div className="page container-fluid" id={`${props.location.pathname.substr(1)}`}>
-              <Helmet titleTemplate={`%s - ${title}`} />
-              <NavBar/>
-              <Switch>
-                {routes.map((route, i) => (
-                  <Route key={i} {...route} />
-                ))}
-                <Route component={NoMatch} />
-              </Switch>
-              <PreFooter />
-              <Footer />
-            </div>
-          )
-        }} />
+        <ScrollToTop>
+          <Route render={(props) => {
+            return (
+              <div className="page container-fluid" id={`${props.location.pathname.substr(1)}`}>
+                <Helmet titleTemplate={`%s - ${title}`} />
+                <NavBar/>
+                <Switch>
+                  {routes.map((route, i) => (
+                    <Route key={i} {...route} />
+                  ))}
+                  <Route component={NoMatch} />
+                </Switch>
+                <PreFooter />
+                <Footer />
+              </div>
+            )
+          }} />
+        </ScrollToTop>
       </Router>
     );
   }

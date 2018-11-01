@@ -59,7 +59,7 @@ const awardSliderSettings = {
 };
 
 export default () => (
-  <div id="landing-page">
+  <div id="landing-page" className="page--body">
     <section id="landing--header">
       <div className="container">
         <div id="landing-header--inner" className="flex--grid section--header">
@@ -97,7 +97,7 @@ export default () => (
             </div>
             <div className="landing-process-attribute--text-container">
               <h3>LTV-driven targeting</h3>
-              <p>We track post-install behavior, not clicks and downloads, to identify your highest LTV users and find lookalikes in the wild.</p>
+              <p>Evaluating consumer behavior, and measuring insights beyond the install, is the epicenter of our data driven targeting.</p>
             </div>
           </div>
           <div className="landing-process--attribute">
@@ -106,7 +106,7 @@ export default () => (
             </div>
             <div className="landing-process-attribute--text-container">
               <h3>Real-time optimization</h3>
-              <p>We monitor ad performance vigilantly, bid aggressively on placements that work for your brand and drop the ones that don’t.</p>
+              <p>With end-to-end first party data analysis and campaign-specific KPIs, our platform is engineered to fuel performance-first results.</p>
             </div>
           </div>
           <div className="landing-process--attribute">

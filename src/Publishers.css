@@ -1,5 +1,7 @@
 #Publishers {
   background-color: #F8F8F8; }
+  #Publishers .nav--outer {
+    background-color: #F8F8F8; }
 
 @media (max-width: 768px) {
   #publishers--header {
@@ -31,7 +33,7 @@
         height: 85px; } }
 
 #publishers--ads #publishers--ads-container #publishers-ads--row-1 {
-  left: -100px; }
+  left: -50px; }
 
 #publishers--ads #publishers--ads-container #publishers-ads--row-2 {
   left: -300px;

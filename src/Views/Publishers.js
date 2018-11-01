@@ -6,12 +6,6 @@ import Helmet from 'react-helmet';
 import '../Publishers.css';
 
 // Images
-import AdOne from '../Images/Publishers_Ads/PublishersPageAd1.png';
-import AdTwo from '../Images/Publishers_Ads/PublishersPageAd2.png';
-import AdThree from '../Images/Publishers_Ads/PublishersPageAd3.png';
-import AdFour from '../Images/Publishers_Ads/PublishersPageAd4.gif';
-import AdFive from '../Images/Publishers_Ads/PublishersPageAd5.gif';
-import AdSix from '../Images/Publishers_Ads/PublishersPageAd6.png';
 import PublishersMockupOne from '../Images/Publishers_Mockup_1.png';
 import PublishersMockupTwo from '../Images/Publishers_Mockup_2.png';
 import PublishersMockupThree from '../Images/Publishers_Mockup_3.png';
@@ -35,12 +29,12 @@ import PublisherAds from '../Components/PublisherAds';
 const publishersTrioItems = [
   {
     title: "Intuitive design",
-    body: "Start monetizing in minutes with user-friendly tools that won’t slow down.",
+    body: "Start monetizing in minutes with user-friendly tools that won’t slow you down.",
     image: DesignIcon
   },
   {
     title: "Top-notch support",
-    body: "Get hands-on guidance from a marketers with years of experience in the field.",
+    body: "Get hands-on guidance from marketers with years of experience in the field.",
     image: SupportIcon
   },
   {
@@ -51,7 +45,7 @@ const publishersTrioItems = [
 ]
 
 export default () => (
-  <div id="publishers-page">
+  <div id="publishers-page" className="page--body">
     <section id="publishers--header" className="centered-text--header">
       <div className="container">
         <div id="publishers-header--inner" className="section--header centered-text-header--inner">

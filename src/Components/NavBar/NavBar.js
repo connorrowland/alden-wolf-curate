@@ -32,23 +32,25 @@ class NavBar extends Component {
   render() {
     return (
       <div className="nav--outer">
-        <div className={`mobile-flyout--container ${this.state.mobileFlyoutOpen ? "mobile-flyout--open" : "mobile-flyout--closed"}`}>
-          <div className="mobile-flyout--inner">
-            <div className="mobile-flyout--menu">
-              <div className="mobile-flyout--menu-inner">
-                <NavLink to="/" onClick={this.toggleMobileNavigation} >
-                  <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
-                </NavLink>
-                <a href="#" className="nav--x-container" id="nav-close" onClick={this.toggleMobileNavigation}>
-                  <img src={XIcon} className="mobile-nav-x--img" alt="Curate Mobile Logo" />
-                </a>
+        <div id="mobile-flyout--outer">
+          <div className={`mobile-flyout--container ${this.state.mobileFlyoutOpen ? "mobile-flyout--open" : "mobile-flyout--closed"}`}>
+            <div className="mobile-flyout--inner">
+              <div className="mobile-flyout--menu">
+                <div className="mobile-flyout--menu-inner">
+                  <NavLink to="/" onClick={this.toggleMobileNavigation}>
+                    <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
+                  </NavLink>
+                  <a href="#" className="nav--x-container" id="nav-close" onClick={this.toggleMobileNavigation}>
+                    <img src={XIcon} className="mobile-nav-x--img" alt="Curate Mobile Logo" />
+                  </a>
+                </div>
+                <div id="mobile-flyout--divider"></div>
               </div>
-              <div id="mobile-flyout--divider"></div>
-            </div>
-            <div className="mobile-flyout--links-container">
-              <NavLink to="/Platform" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Platform</NavLink>
-              <NavLink to="/Publishers" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Publishers</NavLink>
-              <NavLink to="/Company" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Company & Events</NavLink>
+              <div className="mobile-flyout--links-container">
+                <NavLink to="/Platform" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Platform</NavLink>
+                <NavLink to="/Publishers" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Publishers</NavLink>
+                <NavLink to="/Company" className="nav--link" activeClassName="nav--link-selected" onClick={this.closeMobileNavigation}>Company & Events</NavLink>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,6 @@
 @import "./Variables.scss";
 
 #company--header {
-  margin-top: 100px;
   padding: 0 0 165px 0;
   @media(max-width: $Tablet) {
     padding: 0 0 75px 0;
@@ -20,17 +19,7 @@
       margin: 0 auto 10px auto;
       color: $Red;
       @media(max-width: $TabletLG) {
-        font-size: 60px;
-        line-height: 72px;
         max-width: 575px;
-      }
-      @media(max-width: $Tablet) {
-        font-size: 36px;
-        line-height: 48px;
-      }
-      @media(max-width: $Phone) {
-        font-size: 32px;
-        line-height: 46px;
       }
     }
     p {
@@ -48,6 +37,10 @@
       @media(max-width: $Tablet) {
         font-size: 14px;
         line-height: 32px;
+        max-width: 400px;
+      }
+      @media(max-width: $Phone) {
+        max-width: 285px;
       }
     }
   }
@@ -144,13 +137,17 @@
     padding: 0 0 50px 0;
   }
   #company-team--photo-container {
-    padding: 35px 35px 0 35px;
+    padding: 60px 60px 0 60px;
     margin-bottom: 100px;
+    text-align: center;
     @media(max-width: $Tablet) {
       margin-bottom: 40px;
+      padding: 30px 30px 0 30px;
     }
     img {
       width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
     }
   }
   #company-team--intro-text {
@@ -248,7 +245,7 @@
       }
     }
     .team-member--small {
-      max-width: 300px;
+      max-width: 330px;
       @media(max-width: $TabletLG) {
         width: 32%;
       }
@@ -355,7 +352,7 @@
   }
   #company-news--items {
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 60px;
     @media(max-width: $Tablet) {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
