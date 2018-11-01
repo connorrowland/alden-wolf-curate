@@ -67,6 +67,10 @@ h2 {
     font-size: 36px;
     line-height: 48px;
   }
+  @media(max-width: $Phone) {
+    font-size: 32px;
+    line-height: 44px;
+  }
 }
 
 h3 {
@@ -333,6 +337,7 @@ button,.button {
   #mobile-flyout--trigger {
     display: none;
     @media(max-width: $Tablet){
+      cursor: pointer;
       margin-right: 15px;
       display: inline-block;
     }
@@ -396,6 +401,7 @@ button,.button {
         position: absolute;
         right: 25px;
         top: 30px;
+        cursor: pointer;
         .mobile-nav-x--img {
           width: 15px;
           height: 15px;
@@ -422,12 +428,9 @@ button,.button {
     display: inline-block;
   }
   .nav-logo--img {
-    width: 202px;
+    width: 150px;
     height: auto;
-    max-height: 72px;
-    @media(max-width: $Desk){
-      width: 150px;
-    }
+    max-height: 55px;
     @media(max-width: $TabletLG){
       width: 120px;
     }
@@ -450,7 +453,7 @@ button,.button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 30px 35px 15px 35px;
+    padding: 20px;
     @media(max-width: $Tablet){
       margin: 0;
       -webkit-box-align: center;
@@ -547,8 +550,8 @@ button,.button {
         text-align: left;
         .footer-link--lg {
           color: $White;
-          font-size: 22px;
-          line-height: 47px;
+          font-size: 18px;
+          line-height: 40px;
           width: 100%;
           display: block;
           @media(max-width: $DeskLG) {
@@ -584,7 +587,7 @@ button,.button {
       .footer--col {
         text-align: left;
         .footer-sm-link--title {
-          color: $White;
+          color: $BlueOne;
           font-size: 16px;
           line-height: 18px;
           margin-bottom: 5px;
@@ -714,6 +717,9 @@ button,.button {
     }
     p {
       margin: 10px 0 20px 0;
+      @media(max-width: $Tablet) {
+        margin: 0 0 15px 0;
+      }
     }
   }
 }
@@ -752,6 +758,9 @@ button,.button {
 
 .section--header {
   margin-top: 60px;
+  @media(max-width: $Phone) {
+    margin-top: 40px;
+  }
 }
 
 .nav--link-selected {
@@ -778,6 +787,8 @@ button,.button {
           font-size: 36px;
           line-height: 48px;
           margin: 0 auto 10px auto;
+        }
+        @media(max-width: $Phone) {
           max-width: 260px;
         }
       }
@@ -842,19 +853,13 @@ button,.button {
       width: 45px;
       height: 50px;
     }
-    img {
-      width: auto;
-      height: 90px;
-      @media(max-width: $TabletLG) {
-        height: 40px;
-      }
-    }
   }
   h3 {
     line-height: 39px;
     margin-top: 10px;
     @media(max-width: $TabletLG) {
       font-size: 18px;
+      line-height: 36px;
     }
   }
   p {
@@ -881,9 +886,6 @@ button,.button {
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 10px;
-    img {
-      max-width: 90px;
-    }
   }
   h3 {
     font-size: 24px;
@@ -904,5 +906,16 @@ button,.button {
   }
   @media(max-width: $TabletLG) {
     padding-top: 93px;
+  }
+}
+
+.icon--normal {
+  height: 85px;
+  width: auto;
+  @media(max-width: $TabletLG) {
+    height: 65px;
+  }
+  @media(max-width: $Tablet) {
+    height: 45px;
   }
 }

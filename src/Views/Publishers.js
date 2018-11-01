@@ -25,6 +25,7 @@ import TenjinLogo from '../Images/Publishers_Logos/Tenjin_Logo.png'
 // Components
 import ValuePropsTrio from '../Components/ValuePropsTrio';
 import PublisherAds from '../Components/PublisherAds';
+import ScrollToTopOnMount from "../Components/ScrollToTopOnMount";
 
 const publishersTrioItems = [
   {
@@ -46,6 +47,7 @@ const publishersTrioItems = [
 
 export default () => (
   <div id="publishers-page" className="page--body">
+    <ScrollToTopOnMount />
     <section id="publishers--header" className="centered-text--header">
       <div className="container">
         <div id="publishers-header--inner" className="section--header centered-text-header--inner">

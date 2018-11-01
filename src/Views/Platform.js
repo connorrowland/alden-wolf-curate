@@ -16,6 +16,7 @@ import CheckIcon from '../Images/Check_Icon.png';
 
 // Components
 import ValuePropsTrio from '../Components/ValuePropsTrio';
+import ScrollToTopOnMount from "../Components/ScrollToTopOnMount";
 
 const platformTrioItems = [
   {
@@ -37,6 +38,7 @@ const platformTrioItems = [
 
 export default () => (
   <div id="platform-page" className="page--body">
+    <ScrollToTopOnMount />
     <section id="platform--header">
       <div className="container">
         <div id="platform-header--inner" className="section--header">

@@ -40,9 +40,9 @@ class NavBar extends Component {
                   <NavLink to="/" onClick={this.toggleMobileNavigation}>
                     <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
                   </NavLink>
-                  <a href="#" className="nav--x-container" id="nav-close" onClick={this.toggleMobileNavigation}>
+                  <div className="nav--x-container" id="nav-close" onClick={this.toggleMobileNavigation}>
                     <img src={XIcon} className="mobile-nav-x--img" alt="Curate Mobile Logo" />
-                  </a>
+                  </div>
                 </div>
                 <div id="mobile-flyout--divider"></div>
               </div>
@@ -58,9 +58,9 @@ class NavBar extends Component {
         <nav className="nav-links--container">
           <div className="nav--inner">
             <div className="nav-inner--left">
-              <a href="#" className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>
+              <div className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>
                 <img src={Hamburger} alt="Hamburger Menu Icon" id="burger-menu--icon" />
-              </a>
+              </div>
               <NavLink to="/" className="nav--logo">
                 <img src={Logo} className="nav-logo--img" alt="Curate Mobile Logo" />
               </NavLink>

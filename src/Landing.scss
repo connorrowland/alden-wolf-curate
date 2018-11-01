@@ -26,8 +26,12 @@
       }
       @media(max-width: $Tablet) {
         max-width: 100%;
+        width: 100%;
         padding: 0 15px;
         margin: 0 0 40px 0;
+      }
+      @media(max-width: $Phone) {
+        text-align: center;
       }
       h2,p {
         margin-bottom: 10px;
@@ -38,6 +42,10 @@
       p {
         max-width: 500px;
         margin-bottom: 15px;
+        @media(max-width: $Phone) {
+          max-width: 300px;
+          margin: 0 auto 20px auto;
+        }
       }
       h2 {
         color: $Red;
@@ -46,7 +54,13 @@
           max-width: 300px;
         }
         @media(max-width: $Phone) {
-          max-width: 275px;
+          max-width: 250px;
+          margin: 0 auto 5px auto;
+        }
+      }
+      .button {
+        @media(max-width: $Phone) {
+          width: 150px;
         }
       }
     }
@@ -72,8 +86,8 @@
       }
       @media(max-width: $Tablet) {
         margin: 0 auto;
-        width: 150px;
-        max-height: 305px;
+        width: 195px;
+        max-height: 400px;
       }
     }
   }
@@ -81,13 +95,16 @@
 
 #landing--process {
   background-color: $LightGray;
+  @media(max-width: $Phone) {
+    padding: 80px 0 50px 0;
+  }
   #landing-process--intro-text {
     text-align: center;
     max-width: 775px;
     margin: 0 auto;
     h2 {
       @media(max-width: $Phone) {
-        max-width: 250px;
+        max-width: 100%;
         margin: 10px auto 0 auto;
       }
     }
@@ -95,7 +112,7 @@
   #landing-process--attributes-container {
     margin-top: 45px;
     @media(max-width: $Phone) {
-      margin-top: 25px;
+      margin-top: 0;
     }
     .landing-process--attribute {
       margin-bottom: 40px;
@@ -104,6 +121,7 @@
       display: inline-block;
       @media(max-width: $Phone) {
         width: 100%;
+        margin-bottom: 20px;
       }
       .landing-process-attribute--icon-container {
         height: 100px;
@@ -119,11 +137,6 @@
         @media(max-width: $Tablet) {
           margin-bottom: 20px;
         }
-        img {
-          width: 80px;
-          height: auto;
-          max-height: 100px;
-        }
       }
       .landing-process-attribute--text-container {
         p {
@@ -135,7 +148,7 @@
             margin: 5px auto 0 auto;
           }
           @media(max-width: $Phone) {
-            max-width: 260px;
+            max-width: 290px;
           }
         }
       }
@@ -150,14 +163,15 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-bottom: 230px;
+  padding-bottom: 200px;
   padding-top: 130px;
   @media(max-width: $TabletLG) {
-    padding-bottom: 225px;
+    padding-bottom: 180px;
+    padding-top: 100px;
   }
   @media(max-width: $Tablet) {
-    padding-bottom: 150px;
-    padding-top: 75px;
+    padding-bottom: 140px;
+    padding-top: 65px;
   }
   @media(max-width: $Phone) {
     padding-bottom: 100px;
@@ -181,9 +195,11 @@
     p {
       max-width: 600px;
       margin: 0 auto;
+      @media(max-width: $Tablet) {
+        font-size: 14px;
+        line-height: 32px;
+      }
       @media(max-width: $Phone) {
-        font-size: 18px;
-        line-height: 37px;
         max-width: 310px;
         margin: 0 auto;
       }
@@ -205,9 +221,9 @@
       bottom: -60px;
     }
     img {
-      width: 600px;
+      width: 570px;
       height: auto;
-      max-height: 300px;
+      max-height: 285px;
       @media(max-width: $TabletLG) {
         width: 500px;
         max-height: 250px;
@@ -251,7 +267,7 @@
         padding: 0 15px;
       }
       @media(max-width: $Phone) {
-        max-width: 300px;
+        max-width: 400px;
       }
       h2 {
         color: $Red;
@@ -341,19 +357,21 @@
       h2 {
         max-width: 320px;
         margin-bottom: 10px;
-        @media(max-width: $Tablet) {
-          max-width: 200px;
+        @media(max-width: $Phone) {
+          max-width: 300px;
         }
       }
       &:last-of-type {
         margin-bottom: 0;
       }
+      p {
+        @media(max-width: $Phone) {
+          max-width: 300px;
+        }
+      }
       .landing-feature-item--icon {
-        width: auto;
-        height: 120px;
-        max-width: 120px;
+        margin-bottom: 20px;
         @media(max-width: $TabletLG) {
-          width: 100px;
           margin-bottom: 10px;
         }
         @media(max-width: $Tablet) {
@@ -386,6 +404,9 @@
       @media(max-width: $Tablet) {
         max-width: 450px;
       }
+      @media(max-width: $Phone) {
+        max-width: 300px;
+      }
     }
   }
   #landing--award-carousel {
@@ -404,9 +425,6 @@
         height: 140px;
       }
       @media(max-width: $TabletLG) {
-        height: 130px;
-      }
-      @media(max-width: $Tablet) {
         height: 100px;
       }
       h3 {
@@ -425,6 +443,11 @@
         @media(max-width: $Desk) {
           font-size: 16px;
           line-height: 22px;
+        }
+        @media(max-width: $TabletLG) {
+          font-size: 14px;
+          line-height: 22px;
+          max-width: 130px;
         }
         @media(max-width: $Tablet) {
           font-size: 14px;
@@ -466,7 +489,7 @@
           max-width: 500px;
         }
         @media(max-width: $Tablet) {
-          max-width: 300px;
+          max-width: 400px;
         }
       }
     }

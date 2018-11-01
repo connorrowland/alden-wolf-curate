@@ -25,8 +25,12 @@
     @media (max-width: 768px) {
       #landing--header #landing-header--inner #landing-header-inner--text {
         max-width: 100%;
+        width: 100%;
         padding: 0 15px;
         margin: 0 0 40px 0; } }
+    @media (max-width: 550px) {
+      #landing--header #landing-header--inner #landing-header-inner--text {
+        text-align: center; } }
     #landing--header #landing-header--inner #landing-header-inner--text h2, #landing--header #landing-header--inner #landing-header-inner--text p {
       margin-bottom: 10px; }
       @media (max-width: 768px) {
@@ -35,6 +39,10 @@
     #landing--header #landing-header--inner #landing-header-inner--text p {
       max-width: 500px;
       margin-bottom: 15px; }
+      @media (max-width: 550px) {
+        #landing--header #landing-header--inner #landing-header-inner--text p {
+          max-width: 300px;
+          margin: 0 auto 20px auto; } }
     #landing--header #landing-header--inner #landing-header-inner--text h2 {
       color: #850201;
       max-width: 400px; }
@@ -43,7 +51,11 @@
           max-width: 300px; } }
       @media (max-width: 550px) {
         #landing--header #landing-header--inner #landing-header-inner--text h2 {
-          max-width: 275px; } }
+          max-width: 250px;
+          margin: 0 auto 5px auto; } }
+    @media (max-width: 550px) {
+      #landing--header #landing-header--inner #landing-header-inner--text .button {
+        width: 150px; } }
   @media (max-width: 768px) {
     #landing--header #landing-header--inner #landing-hero-ad--container {
       width: 100%;
@@ -65,24 +77,27 @@
     @media (max-width: 768px) {
       #landing--header #landing-header--inner #landing-header-inner--ad {
         margin: 0 auto;
-        width: 150px;
-        max-height: 305px; } }
+        width: 195px;
+        max-height: 400px; } }
 
 #landing--process {
   background-color: #F7F7F7; }
+  @media (max-width: 550px) {
+    #landing--process {
+      padding: 80px 0 50px 0; } }
   #landing--process #landing-process--intro-text {
     text-align: center;
     max-width: 775px;
     margin: 0 auto; }
     @media (max-width: 550px) {
       #landing--process #landing-process--intro-text h2 {
-        max-width: 250px;
+        max-width: 100%;
         margin: 10px auto 0 auto; } }
   #landing--process #landing-process--attributes-container {
     margin-top: 45px; }
     @media (max-width: 550px) {
       #landing--process #landing-process--attributes-container {
-        margin-top: 25px; } }
+        margin-top: 0; } }
     #landing--process #landing-process--attributes-container .landing-process--attribute {
       margin-bottom: 40px;
       width: 45%;
@@ -90,7 +105,8 @@
       display: inline-block; }
       @media (max-width: 550px) {
         #landing--process #landing-process--attributes-container .landing-process--attribute {
-          width: 100%; } }
+          width: 100%;
+          margin-bottom: 20px; } }
       #landing--process #landing-process--attributes-container .landing-process--attribute .landing-process-attribute--icon-container {
         height: 100px;
         display: -webkit-box;
@@ -105,10 +121,6 @@
         @media (max-width: 768px) {
           #landing--process #landing-process--attributes-container .landing-process--attribute .landing-process-attribute--icon-container {
             margin-bottom: 20px; } }
-        #landing--process #landing-process--attributes-container .landing-process--attribute .landing-process-attribute--icon-container img {
-          width: 80px;
-          height: auto;
-          max-height: 100px; }
       #landing--process #landing-process--attributes-container .landing-process--attribute .landing-process-attribute--text-container p {
         font-size: 14px;
         line-height: 29px;
@@ -119,7 +131,7 @@
             margin: 5px auto 0 auto; } }
         @media (max-width: 550px) {
           #landing--process #landing-process--attributes-container .landing-process--attribute .landing-process-attribute--text-container p {
-            max-width: 260px; } }
+            max-width: 290px; } }
 
 #landing--global-scaling {
   background-color: #850201;
@@ -128,15 +140,16 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-bottom: 230px;
+  padding-bottom: 200px;
   padding-top: 130px; }
   @media (max-width: 992px) {
     #landing--global-scaling {
-      padding-bottom: 225px; } }
+      padding-bottom: 180px;
+      padding-top: 100px; } }
   @media (max-width: 768px) {
     #landing--global-scaling {
-      padding-bottom: 150px;
-      padding-top: 75px; } }
+      padding-bottom: 140px;
+      padding-top: 65px; } }
   @media (max-width: 550px) {
     #landing--global-scaling {
       padding-bottom: 100px;
@@ -156,10 +169,12 @@
     #landing--global-scaling #landing-global-scaling--text p {
       max-width: 600px;
       margin: 0 auto; }
+      @media (max-width: 768px) {
+        #landing--global-scaling #landing-global-scaling--text p {
+          font-size: 14px;
+          line-height: 32px; } }
       @media (max-width: 550px) {
         #landing--global-scaling #landing-global-scaling--text p {
-          font-size: 18px;
-          line-height: 37px;
           max-width: 310px;
           margin: 0 auto; } }
   #landing--global-scaling #landing-global-scaling--image {
@@ -178,9 +193,9 @@
       #landing--global-scaling #landing-global-scaling--image {
         bottom: -60px; } }
     #landing--global-scaling #landing-global-scaling--image img {
-      width: 600px;
+      width: 570px;
       height: auto;
-      max-height: 300px; }
+      max-height: 285px; }
       @media (max-width: 992px) {
         #landing--global-scaling #landing-global-scaling--image img {
           width: 500px;
@@ -221,7 +236,7 @@
         padding: 0 15px; } }
     @media (max-width: 550px) {
       #landing--optimization #landing-optimization--inner #landing-optimization-inner--text {
-        max-width: 300px; } }
+        max-width: 400px; } }
     #landing--optimization #landing-optimization--inner #landing-optimization-inner--text h2 {
       color: #850201; }
     #landing--optimization #landing-optimization--inner #landing-optimization-inner--text p {
@@ -297,18 +312,18 @@
   #landing--features #landing-features--inner .landing-features--item h2 {
     max-width: 320px;
     margin-bottom: 10px; }
-    @media (max-width: 768px) {
+    @media (max-width: 550px) {
       #landing--features #landing-features--inner .landing-features--item h2 {
-        max-width: 200px; } }
+        max-width: 300px; } }
   #landing--features #landing-features--inner .landing-features--item:last-of-type {
     margin-bottom: 0; }
+  @media (max-width: 550px) {
+    #landing--features #landing-features--inner .landing-features--item p {
+      max-width: 300px; } }
   #landing--features #landing-features--inner .landing-features--item .landing-feature-item--icon {
-    width: auto;
-    height: 120px;
-    max-width: 120px; }
+    margin-bottom: 20px; }
     @media (max-width: 992px) {
       #landing--features #landing-features--inner .landing-features--item .landing-feature-item--icon {
-        width: 100px;
         margin-bottom: 10px; } }
     @media (max-width: 768px) {
       #landing--features #landing-features--inner .landing-features--item .landing-feature-item--icon {
@@ -335,6 +350,9 @@
       @media (max-width: 768px) {
         #landing--leadership #landing-leadership--inner p {
           max-width: 450px; } }
+      @media (max-width: 550px) {
+        #landing--leadership #landing-leadership--inner p {
+          max-width: 300px; } }
   #landing--leadership #landing--award-carousel {
     margin-top: 70px; }
     @media (max-width: 768px) {
@@ -351,9 +369,6 @@
         #landing--leadership #landing--award-carousel .landing-award--carousel-item {
           height: 140px; } }
       @media (max-width: 992px) {
-        #landing--leadership #landing--award-carousel .landing-award--carousel-item {
-          height: 130px; } }
-      @media (max-width: 768px) {
         #landing--leadership #landing--award-carousel .landing-award--carousel-item {
           height: 100px; } }
       #landing--leadership #landing--award-carousel .landing-award--carousel-item h3 {
@@ -373,6 +388,11 @@
           #landing--leadership #landing--award-carousel .landing-award--carousel-item h3 {
             font-size: 16px;
             line-height: 22px; } }
+        @media (max-width: 992px) {
+          #landing--leadership #landing--award-carousel .landing-award--carousel-item h3 {
+            font-size: 14px;
+            line-height: 22px;
+            max-width: 130px; } }
         @media (max-width: 768px) {
           #landing--leadership #landing--award-carousel .landing-award--carousel-item h3 {
             font-size: 14px;
@@ -407,7 +427,7 @@
         max-width: 500px; } }
     @media (max-width: 768px) {
       #landing--success #landing-success--inner #landing-success--heading h2 {
-        max-width: 300px; } }
+        max-width: 400px; } }
 
 #landing--success #landing-success--inner .landing-success-category--text-col {
   width: 315px;

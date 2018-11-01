@@ -1,8 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import ScrollToTopOnMount from "../Components/ScrollToTopOnMount";
 
 export default () => (
   <div id="privacy-policy" className="page--body">
+    <ScrollToTopOnMount />
     <div className="container section--normal">
       <p>
         Last Updated: May 24, 2018<br/>

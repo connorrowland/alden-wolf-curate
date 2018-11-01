@@ -6,7 +6,7 @@ class ValuePropsTrio extends Component {
       return (
         <div key={i} className="flex-trio--item trio-image-text--item">
           <div className="trio-image--container">
-            <img src={item.image} alt="Curate Icon" className="icon-text-trio-item--image"/>
+            <img src={item.image} alt="Curate Icon" className="icon-text-trio-item--image icon--normal"/>
           </div>
           <h3>{item.title}</h3>
           <p>{item.body}</p>

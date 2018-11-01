@@ -17,10 +17,11 @@ import ProductMockup from '../Images/Landing_Product_Mockup.png';
 import MonitoringIcon from '../Images/Monitoring_Icon.png';
 import SecurityIcon from '../Images/Security_Icon.png';
 
+//Components
 import LeftArrow from "../Components/LeftSliderArrow";
 import RightArrow from "../Components/RightSliderArrow";
-
 import SuccessSlider from "../Components/SuccessSlider";
+import ScrollToTopOnMount from "../Components/ScrollToTopOnMount";
 
 const awardSliderSettings = {
   infinite: true,
@@ -32,7 +33,7 @@ const awardSliderSettings = {
   nextArrow: <RightArrow />,
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -60,6 +61,7 @@ const awardSliderSettings = {
 
 export default () => (
   <div id="landing-page" className="page--body">
+    <ScrollToTopOnMount />
     <section id="landing--header">
       <div className="container">
         <div id="landing-header--inner" className="flex--grid section--header">
@@ -84,7 +86,7 @@ export default () => (
         <div id="landing-process--attributes-container" className="flex--grid">
           <div className="landing-process--attribute">
             <div className="landing-process-attribute--icon-container">
-              <img src={CollabIcon} alt="Curate Icon"/>
+              <img src={CollabIcon} alt="Curate Icon" className="icon--normal"/>
             </div>
             <div className="landing-process-attribute--text-container">
               <h3>Close collaboration</h3>
@@ -93,7 +95,7 @@ export default () => (
           </div>
           <div className="landing-process--attribute">
             <div className="landing-process-attribute--icon-container">
-              <img src={TargetingIcon} alt="Curate Icon"/>
+              <img src={TargetingIcon} alt="Curate Icon" className="icon--normal"/>
             </div>
             <div className="landing-process-attribute--text-container">
               <h3>LTV-driven targeting</h3>
@@ -102,7 +104,7 @@ export default () => (
           </div>
           <div className="landing-process--attribute">
             <div className="landing-process-attribute--icon-container">
-              <img src={OptimizationIcon} alt="Curate Icon"/>
+              <img src={OptimizationIcon} alt="Curate Icon" className="icon--normal"/>
             </div>
             <div className="landing-process-attribute--text-container">
               <h3>Real-time optimization</h3>
@@ -111,7 +113,7 @@ export default () => (
           </div>
           <div className="landing-process--attribute">
             <div className="landing-process-attribute--icon-container">
-              <img src={DataIcon} alt="Curate Icon"/>
+              <img src={DataIcon} alt="Curate Icon" className="icon--normal"/>
             </div>
             <div className="landing-process-attribute--text-container">
               <h3>Clear, actionable data</h3>
@@ -164,12 +166,12 @@ export default () => (
       <div className="container">
         <div id="landing-features--inner" className="flex--grid">
           <div className="landing-features--item flex-duo--item">
-            <img src={MonitoringIcon} alt="Monitoring Icon" className="landing-feature-item--icon"/>
+            <img src={MonitoringIcon} alt="Monitoring Icon" className="landing-feature-item--icon icon--normal"/>
             <h2>Proactive monitoring</h2>
             <p>With the ability to track over 1,000 queries per second (QPS) without the loss of any clicks, we optimize under-performing placements in real-time.</p>
           </div>
           <div className="landing-features--item flex-duo--item">
-            <img src={SecurityIcon} alt="Security Icon" className="landing-feature-item--icon"/>
+            <img src={SecurityIcon} alt="Security Icon" className="landing-feature-item--icon icon--normal"/>
             <h2>Cutting-edge security</h2>
             <p>Our platform programmatically blocks suspicious, non-human activity from emulators, install-bot farms, device-spoofing, and proxy unmasking.</p>
           </div>

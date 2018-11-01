@@ -16,6 +16,9 @@ import SampleAd1 from '../Images/SampleAd1.png';
 import SampleAd2 from '../Images/SampleAd2.png';
 import SampleAd3 from '../Images/SampleAd3.png';
 
+// Components
+import ScrollToTopOnMount from "../Components/ScrollToTopOnMount";
+
 const companyPhotoSlider = {
   infinite: true,
   slidesToShow: 1,
@@ -33,6 +36,7 @@ const companyPhotoSlider = {
 
 export default () => (
   <div id="company-page" className="page--body">
+    <ScrollToTopOnMount />
     <section id="company--header">
       <div className="container">
         <div id="company-header--inner" className="section--header">
@@ -43,28 +47,28 @@ export default () => (
           <div id="company-header--attributes" className="flex--grid">
             <div className="company-header-attribute--container">
               <div className="company-attributes-icon--container flex--grid">
-                <img src={TorontoIcon} alt="Curate Product" className="company-attributes--icon" id="toronto-icon"/>
+                <img src={TorontoIcon} alt="Curate Product" className="company-attributes--icon icon--normal" id="toronto-icon"/>
               </div>
               <h2>2015</h2>
               <h3>Founded in Toronto</h3>
             </div>
             <div className="company-header-attribute--container">
               <div className="company-attributes-icon--container flex--grid">
-                <img src={WorldIcon} alt="Curate Product" className="company-attributes--icon" id="world-icon"/>
+                <img src={WorldIcon} alt="Curate Product" className="company-attributes--icon icon--normal" id="world-icon"/>
               </div>
               <h2>180+</h2>
               <h3>Countries served</h3>
             </div>
             <div className="company-header-attribute--container">
               <div className="company-attributes-icon--container flex--grid">
-                <img src={PhoneIcon} alt="Curate Product" className="company-attributes--icon" id="phone-icon"/>
+                <img src={PhoneIcon} alt="Curate Product" className="company-attributes--icon icon--normal" id="phone-icon"/>
               </div>
               <h2>3500+</h2>
               <h3>Managed apps</h3>
             </div>
             <div className="company-header-attribute--container">
               <div className="company-attributes-icon--container flex--grid">
-                <img src={ClientsIcon} alt="Curate Product" className="company-attributes--icon" id="client-icon"/>
+                <img src={ClientsIcon} alt="Curate Product" className="company-attributes--icon icon--normal" id="client-icon"/>
               </div>
               <h2>300+</h2>
               <h3>Current clients</h3>
@@ -83,7 +87,7 @@ export default () => (
         </Slider>
       </div>
       <div id="company-team--intro-text">
-        <h1>Meet the team</h1>
+        <h2>Meet the team</h2>
         <p>Our business is founded on relationships and we bring fairness and <br/>commitment to each one them.</p>
       </div>
       <div className="container">
@@ -116,7 +120,7 @@ export default () => (
         </div>
         <div id="company-team--rule"></div>
         <div id="company-team--hiring">
-          <h1>We’re hiring</h1>
+          <h2>We’re hiring</h2>
           <p>Are you ready to be part of a team that’s changing an industry? We want to meet you.</p>
           <a className="button button--light-blue" href="https://angel.co/curate-mobile-ltd/jobs" target="_blank" rel="noopener noreferrer">View open roles</a>
         </div>
@@ -126,7 +130,7 @@ export default () => (
     <section id="company--news" className="section--normal">
       <div className="container">
         <div id="company-news--intro-text">
-          <h1>We’ve been<br/> making some waves</h1>
+          <h2>We’ve been<br/> making some waves</h2>
           <p>Read what people are saying about our work and decide for yourself.</p>
         </div>
       </div>

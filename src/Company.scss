@@ -93,38 +93,6 @@
       }
     }
   }
-  #toronto-icon {
-    width: 35px;
-    height: auto;
-    max-height: 115px;
-    @media(max-width: $TabletLG) {
-      width: 30px;
-    }
-  }
-  #world-icon {
-    width: 85px;
-    height: auto;
-    max-height: 90px;
-    @media(max-width: $TabletLG) {
-      width: 70px;
-    }
-  }
-  #phone-icon {
-    width: 65px;
-    height: auto;
-    max-height: 115px;
-    @media(max-width: $TabletLG) {
-      width: 55px;
-    }
-  }
-  #client-icon {
-    width: 90px;
-    height: auto;
-    max-height: 105px;
-    @media(max-width: $TabletLG) {
-      width: 80px;
-    }
-  }
 }
 
 #company--team {
@@ -157,17 +125,13 @@
       margin-bottom: 40px;
       padding: 0 15px;
     }
-    h1 {
+    h2 {
       color: $White;
       max-width: 600px;
       margin: 0 auto;
       @media(max-width: $TabletLG) {
-        font-size: 60px;
-        line-height: 72px;
       }
       @media(max-width: $Tablet) {
-        font-size: 36px;
-        line-height: 48px;
         margin: 0 auto 10px auto;
       }
     }
@@ -234,6 +198,8 @@
         margin-bottom: 40px;
       }
       h2 {
+        font-size: 42px;
+        line-height: 56px;
         @media(max-width: $TabletLG) {
           font-size: 35px;
           line-height: 46px;
@@ -286,17 +252,9 @@
     @media(max-width: $Tablet) {
       padding: 0 15px;
     }
-    h1 {
+    h2 {
       color: $White;
-      margin: 0 auto 20px auto;
-      @media(max-width: $TabletLG) {
-        font-size: 60px;
-        line-height: 72px;
-      }
-      @media(max-width: $Tablet) {
-        font-size: 36px;
-        line-height: 48px;
-      }
+      margin: 0 auto 10px auto;
     }
     p {
       color: $White;
@@ -307,9 +265,6 @@
       @media(max-width: $Tablet) {
         font-size: 14px;
         line-height: 32px;
-      }
-      @media(max-width: $Phone) {
-        max-width: 260px;
       }
     }
     .button {
@@ -326,7 +281,10 @@
       padding: 0 15px;
       margin: 0 auto 20px auto;
     }
-    h1 {
+    @media(max-width: $Phone) {
+      padding: 0;
+    }
+    h2 {
       color: $Black;
       max-width: 750px;
       margin: 0 auto;
@@ -337,6 +295,9 @@
       @media(max-width: $Tablet) {
         font-size: 36px;
         line-height: 48px;
+      }
+      @media(max-width: $Phone) {
+        margin: 0 0 10px 0;
       }
     }
     p {

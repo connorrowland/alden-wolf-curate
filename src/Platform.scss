@@ -9,10 +9,7 @@
 }
 
 #platform--header {
-  padding-bottom: 180px;
-  @media(max-width: $TabletLG) {
-    padding-bottom: 140px;
-  }
+  padding-bottom: 140px;
   @media(max-width: $Tablet) {
     padding-bottom: 100px;
   }
@@ -49,7 +46,7 @@
 #platform--image {
   background-color: $BlueTwo;
   position: relative;
-  height: 550px;
+  height: 450px;
   @media(max-width: $TabletLG) {
     height: 350px;
   }
@@ -61,10 +58,10 @@
   }
   #platform--product-image-desk {
     position: absolute;
-    width: 900px;
+    width: 750px;
     height: auto;
     margin: 0 auto;
-    top: -90px;
+    top: -40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -81,7 +78,7 @@
     display: none;
     @media(max-width: $Tablet) {
       display: block;
-      max-width: 500px;
+      max-width: 450px;
       width: 90%;
       margin: 0 auto;
       position: absolute;
@@ -236,9 +233,6 @@
       @media(max-width: $Tablet) {
         max-width: 400px;
       }
-      @media(max-width: $Phone) {
-        max-width: 260px;
-      }
     }
     h3 {
       color: $White;
@@ -267,9 +261,9 @@
       display: inline-block;
       vertical-align: middle;
       @media(max-width: $Phone) {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 28px;
-        max-width: 220px;
+        max-width: 215px;
       }
       @media(max-width: $PhoneXS) {
         max-width: 200px;
