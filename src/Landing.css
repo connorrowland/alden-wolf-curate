@@ -77,8 +77,8 @@
     @media (max-width: 768px) {
       #landing--header #landing-header--inner #landing-header-inner--ad {
         margin: 0 auto;
-        width: 195px;
-        max-height: 400px; } }
+        width: 225px;
+        max-height: 460px; } }
 
 #landing--process {
   background-color: #F7F7F7; }
@@ -283,14 +283,25 @@
       #landing--optimization #landing-optimization-inner--mockup {
         position: relative;
         bottom: 0;
-        top: 0; } }
+        top: -140px; } }
     @media (max-width: 768px) {
       #landing--optimization #landing-optimization-inner--mockup {
         width: 290px; } }
+    @media (max-width: 550px) {
+      #landing--optimization #landing-optimization-inner--mockup {
+        width: 280px;
+        top: -180px;
+        right: -100px; } }
   @media (max-width: 992px) {
     #landing--optimization #optimization-mockup--container {
-      text-align: right;
-      margin-top: 40px; } }
+      text-align: right; } }
+  @media (max-width: 550px) {
+    #landing--optimization #optimization-mockup--container {
+      height: 200px; } }
+
+@media (max-width: 992px) {
+  #landing--features {
+    padding-top: 0; } }
 
 @media (max-width: 768px) {
   #landing--features #landing-features--inner {
@@ -309,17 +320,21 @@
     #landing--features #landing-features--inner .landing-features--item {
       width: 100%;
       margin-bottom: 40px; } }
+  @media (max-width: 550px) {
+    #landing--features #landing-features--inner .landing-features--item {
+      max-width: 100%;
+      text-align: center; } }
   #landing--features #landing-features--inner .landing-features--item h2 {
     max-width: 320px;
     margin-bottom: 10px; }
     @media (max-width: 550px) {
       #landing--features #landing-features--inner .landing-features--item h2 {
-        max-width: 300px; } }
+        max-width: 100%; } }
   #landing--features #landing-features--inner .landing-features--item:last-of-type {
     margin-bottom: 0; }
   @media (max-width: 550px) {
     #landing--features #landing-features--inner .landing-features--item p {
-      max-width: 300px; } }
+      max-width: 100%; } }
   #landing--features #landing-features--inner .landing-features--item .landing-feature-item--icon {
     margin-bottom: 20px; }
     @media (max-width: 992px) {

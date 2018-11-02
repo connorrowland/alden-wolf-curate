@@ -86,8 +86,8 @@
       }
       @media(max-width: $Tablet) {
         margin: 0 auto;
-        width: 195px;
-        max-height: 400px;
+        width: 225px;
+        max-height: 460px;
       }
     }
   }
@@ -322,21 +322,31 @@
     @media(max-width: $TabletLG) {
       position: relative;
       bottom: 0;
-      top: 0;
+      top: -140px;
     }
     @media(max-width: $Tablet) {
       width: 290px;
+    }
+    @media(max-width: $Phone) {
+      width: 280px;
+      top: -180px;
+      right: -100px;
     }
   }
   #optimization-mockup--container {
     @media(max-width: $TabletLG) {
       text-align: right;
-      margin-top: 40px;
+    }
+    @media(max-width: $Phone) {
+      height: 200px;
     }
   }
 }
 
 #landing--features {
+  @media(max-width: $TabletLG) {
+    padding-top: 0;
+  }
   #landing-features--inner {
     @media(max-width: $Tablet) {
       padding: 0 15px;
@@ -354,11 +364,15 @@
         width: 100%;
         margin-bottom: 40px;
       }
+      @media(max-width: $Phone) {
+        max-width: 100%;
+        text-align: center;
+      }
       h2 {
         max-width: 320px;
         margin-bottom: 10px;
         @media(max-width: $Phone) {
-          max-width: 300px;
+          max-width: 100%;
         }
       }
       &:last-of-type {
@@ -366,7 +380,7 @@
       }
       p {
         @media(max-width: $Phone) {
-          max-width: 300px;
+          max-width: 100%;
         }
       }
       .landing-feature-item--icon {

@@ -163,14 +163,6 @@
       h2,h3,p {
         color: $White;
       }
-      p {
-        font-size: 16px;
-        line-height: 37px;
-        @media(max-width: $TabletLG) {
-          font-size: 14px;
-          line-height: 32px;
-        }
-      }
       h3 {
         font-size: 20px;
         line-height: 36px;

@@ -136,13 +136,6 @@
       padding: 0 15px; } }
   #company--team #company-team--members-container .team-member--large h2, #company--team #company-team--members-container .team-member--large h3, #company--team #company-team--members-container .team-member--large p, #company--team #company-team--members-container .team-member--small h2, #company--team #company-team--members-container .team-member--small h3, #company--team #company-team--members-container .team-member--small p {
     color: #FFFFFF; }
-  #company--team #company-team--members-container .team-member--large p, #company--team #company-team--members-container .team-member--small p {
-    font-size: 16px;
-    line-height: 37px; }
-    @media (max-width: 992px) {
-      #company--team #company-team--members-container .team-member--large p, #company--team #company-team--members-container .team-member--small p {
-        font-size: 14px;
-        line-height: 32px; } }
   #company--team #company-team--members-container .team-member--large h3, #company--team #company-team--members-container .team-member--small h3 {
     font-size: 20px;
     line-height: 36px; }

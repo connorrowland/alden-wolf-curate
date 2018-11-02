@@ -121,7 +121,7 @@ export default () => (
         <div id="company-team--rule"></div>
         <div id="company-team--hiring">
           <h2>We’re hiring</h2>
-          <p>Are you ready to be part of a team that’s changing an industry? We want to meet you.</p>
+          <p>Are you ready to be part of a team that’s changing an industry?<br/> We want to meet you.</p>
           <a className="button button--light-blue" href="https://angel.co/curate-mobile-ltd/jobs" target="_blank" rel="noopener noreferrer">View open roles</a>
         </div>
       </div>
