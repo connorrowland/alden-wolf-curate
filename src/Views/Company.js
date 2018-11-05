@@ -100,7 +100,7 @@ export default () => (
           <div className="team-member--large flex-duo--item">
             <h2>Moufid Al-Joundi</h2>
             <h3>Partner & CRO</h3>
-            <p>X years of digital advertising experience. Director of Affiliate Marketing @ Singlesnet.com. Director Media Development @ Epic Advertising. VP @ Dealfind. CRO Mundo Media.</p>
+            <p>20 years of advertising experience as an Executive Director behind brands and international exchanges such as Singlesnet.com, Dealfind, Epic Advertising and Mundo Media.</p>
           </div>
           <div className="team-member--small flex-trio--item">
             <h2>Rocky Appiah</h2>

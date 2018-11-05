@@ -84,7 +84,7 @@ export default () => (
             <img src={PublishersMockupThree} alt="Curate Publishers Mockup" className="publishers--mockup"/>
             <div className="publishers-feature-item--text">
               <h2>Transparent reporting</h2>
-              <p>Understand what’s working and  why at a glance from your beautifully designed dashboard.</p>
+              <p>Understand what’s working—and why—at a glance from your beautifully designed dashboard. </p>
             </div>
           </div>
         </div>

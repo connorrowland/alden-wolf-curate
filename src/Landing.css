@@ -329,12 +329,15 @@
     margin-bottom: 10px; }
     @media (max-width: 550px) {
       #landing--features #landing-features--inner .landing-features--item h2 {
-        max-width: 100%; } }
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 24px; } }
   #landing--features #landing-features--inner .landing-features--item:last-of-type {
     margin-bottom: 0; }
   @media (max-width: 550px) {
     #landing--features #landing-features--inner .landing-features--item p {
-      max-width: 100%; } }
+      max-width: 290px;
+      margin: 0 auto; } }
   #landing--features #landing-features--inner .landing-features--item .landing-feature-item--icon {
     margin-bottom: 20px; }
     @media (max-width: 992px) {
@@ -359,6 +362,10 @@
         #landing--leadership #landing-leadership--inner h2, #landing--leadership #landing-leadership--inner p {
           max-width: 300px;
           margin: 0 auto; } }
+    @media (max-width: 550px) {
+      #landing--leadership #landing-leadership--inner h2 {
+        font-size: 28px;
+        line-height: 42px; } }
     #landing--leadership #landing-leadership--inner p {
       max-width: 550px;
       margin: 0 auto; }
@@ -443,6 +450,11 @@
     @media (max-width: 768px) {
       #landing--success #landing-success--inner #landing-success--heading h2 {
         max-width: 400px; } }
+    @media (max-width: 550px) {
+      #landing--success #landing-success--inner #landing-success--heading h2 {
+        max-width: 340px;
+        font-size: 28px;
+        line-height: 42px; } }
 
 #landing--success #landing-success--inner .landing-success-category--text-col {
   width: 315px;

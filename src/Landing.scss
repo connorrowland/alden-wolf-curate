@@ -373,6 +373,8 @@
         margin-bottom: 10px;
         @media(max-width: $Phone) {
           max-width: 100%;
+          font-size: 18px;
+          line-height: 24px;
         }
       }
       &:last-of-type {
@@ -380,7 +382,8 @@
       }
       p {
         @media(max-width: $Phone) {
-          max-width: 100%;
+          max-width: 290px;
+          margin: 0 auto;
         }
       }
       .landing-feature-item--icon {
@@ -410,6 +413,12 @@
       @media(max-width: $Phone) {
         max-width: 300px;
         margin: 0 auto;
+      }
+    }
+    h2 {
+      @media(max-width: $Phone) {
+        font-size: 28px;
+        line-height: 42px;
       }
     }
     p {
@@ -504,6 +513,11 @@
         }
         @media(max-width: $Tablet) {
           max-width: 400px;
+        }
+        @media(max-width: $Phone) {
+          max-width: 340px;
+          font-size: 28px;
+          line-height: 42px;
         }
       }
     }

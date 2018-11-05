@@ -195,10 +195,19 @@ export default () => (
             <h3>2018 Canadian Business ‘Top New Growth Company’</h3>
           </div>
           <div className="landing-award--carousel-item">
-            <h3>Coalition Against Ad Fraud Member</h3>
+            <h3>2018 Stevie Award Winner</h3>
+          </div>
+          <div className="landing-award--carousel-item">
+            <h3>2017 Deloitte Fast 50 Nominee</h3>
           </div>
           <div className="landing-award--carousel-item">
             <h3>Coalition Against Ad Fraud Member</h3>
+          </div>
+          <div className="landing-award--carousel-item">
+            <h3>Better Business Bureau Member</h3>
+          </div>
+          <div className="landing-award--carousel-item">
+            <h3>IAB Canada Member</h3>
           </div>
         </Slider>
       </div>
