@@ -189,7 +189,7 @@ export default () => (
       <div id="landing--award-carousel">
         <Slider {...awardSliderSettings}>
           <div className="landing-award--carousel-item">
-            <h3>2018 E&Y Entrepreneur of the Year</h3>
+            <h3>2018 E&Y nominated Entrepreneur of the year</h3>
           </div>
           <div className="landing-award--carousel-item">
             <h3>2018 Canadian Business ‘Top New Growth Company’</h3>
